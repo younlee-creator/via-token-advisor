@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.w3.org/community/design-tokens/",
   "source": {
-    "light": "/Users/youn.lee/Downloads/Skunkwork_2027/Color _ Semantic/Light.tokens.json",
-    "dark": "/Users/youn.lee/Downloads/Skunkwork_2027/Color _ Semantic/Dark.tokens.json"
+    "light": "Color / Semantic — Light mode (Figma variables export)",
+    "dark": "Color / Semantic — Dark mode (Figma variables export)"
   },
   "notes": [
     "Draft descriptions for Via Color / Semantic variables.",

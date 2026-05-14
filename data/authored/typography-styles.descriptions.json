@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.w3.org/community/design-tokens/",
   "source": {
-    "typographyPrimitive": "/Users/youn.lee/Downloads/Skunkwork_2027/Typography_Primitive.json",
-    "compiledCssReference": "/Users/youn.lee/Cursor/Skunkwork-2027/via-token-advisor/tokens.css"
+    "typographyPrimitive": "Typography Primitive (Figma variables export)",
+    "compiledCssReference": "tokens.css"
   },
   "notes": [
     "Draft descriptions for user-facing Via typography styles.",
