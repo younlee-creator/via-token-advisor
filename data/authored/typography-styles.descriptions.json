@@ -1,0 +1,377 @@
+{
+  "$schema": "https://www.w3.org/community/design-tokens/",
+  "source": {
+    "typographyPrimitive": "/Users/youn.lee/Downloads/Skunkwork_2027/Typography_Primitive.json",
+    "compiledCssReference": "/Users/youn.lee/Cursor/Skunkwork-2027/via-token-advisor/tokens.css"
+  },
+  "notes": [
+    "Draft descriptions for user-facing Via typography styles.",
+    "These entries describe Figma text styles, not individual primitive typography variables.",
+    "cssVar is included only where the current compiled CSS already exposes a composed typography variable.",
+    "futureCssVar marks likely future composed variables for Figma styles that are not yet in the compiled CSS output.",
+    "fontSize and lineHeight are expressed in rem values using a 16px root size.",
+    "Size and spacing tokens are intentionally scoped out of advisor recommendations for now because they are primarily component-specific."
+  ],
+  "styles": [
+    {
+      "id": "typography.heading.01",
+      "figmaStylePath": "Heading/01",
+      "name": "Heading 01",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use for the highest-level page heading when strong brand-led hierarchy is needed; must be paired with text-brand in Via for now.",
+      "cssVar": "--typography-heading-01",
+      "futureCssVar": null,
+      "properties": {
+        "fontFamily": "MongoDB Value Serif",
+        "fontWeight": 400,
+        "fontSize": "3rem",
+        "lineHeight": "4rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1848",
+        "weight": "VariableID:56735:1833",
+        "size": "VariableID:56732:741",
+        "line-height": "VariableID:56732:742",
+        "letter-spacing": "VariableID:56732:744"
+      }
+    },
+    {
+      "id": "typography.heading.02",
+      "figmaStylePath": "Heading/02",
+      "name": "Heading 02",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use for major section headings below the page title when strong brand-led hierarchy is needed; must be paired with text-brand in Via for now.",
+      "cssVar": "--typography-heading-02",
+      "futureCssVar": null,
+      "properties": {
+        "fontFamily": "MongoDB Value Serif",
+        "fontWeight": 400,
+        "fontSize": "2rem",
+        "lineHeight": "2.5rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1849",
+        "weight": "VariableID:56735:1831",
+        "size": "VariableID:56732:746",
+        "line-height": "VariableID:56732:747",
+        "letter-spacing": "VariableID:56732:748"
+      }
+    },
+    {
+      "id": "typography.heading.03",
+      "figmaStylePath": "Heading/03",
+      "name": "Heading 03",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use for prominent section or panel headings that need clear hierarchy without the brand serif style.",
+      "cssVar": "--typography-heading-03",
+      "futureCssVar": null,
+      "properties": {
+        "fontFamily": "Euclid Circular A",
+        "fontWeight": 500,
+        "fontSize": "1.5rem",
+        "lineHeight": "2rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1938",
+        "weight": "VariableID:56735:1939",
+        "size": "VariableID:56735:1940",
+        "line-height": "VariableID:56735:1941",
+        "letter-spacing": "VariableID:56735:1942"
+      }
+    },
+    {
+      "id": "typography.heading.04",
+      "figmaStylePath": "Heading/04",
+      "name": "Heading 04",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use for medium section headings, modal titles, or card headings within product UI.",
+      "cssVar": "--typography-heading-04",
+      "futureCssVar": null,
+      "properties": {
+        "fontFamily": "Euclid Circular A",
+        "fontWeight": 600,
+        "fontSize": "1.125rem",
+        "lineHeight": "1.5rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1943",
+        "weight": "VariableID:56735:1944",
+        "size": "VariableID:56735:1945",
+        "line-height": "VariableID:56735:1946",
+        "letter-spacing": "VariableID:56735:1947"
+      }
+    },
+    {
+      "id": "typography.heading.05",
+      "figmaStylePath": "Heading/05",
+      "name": "Heading 05",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use for compact section headings or subsection titles in dense product UI.",
+      "cssVar": "--typography-heading-05",
+      "futureCssVar": null,
+      "properties": {
+        "fontFamily": "Euclid Circular A",
+        "fontWeight": 600,
+        "fontSize": "1rem",
+        "lineHeight": "1.5rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1948",
+        "weight": "VariableID:56735:1949",
+        "size": "VariableID:56735:1950",
+        "line-height": "VariableID:56735:1951",
+        "letter-spacing": "VariableID:56735:1952"
+      }
+    },
+    {
+      "id": "typography.heading.06",
+      "figmaStylePath": "Heading/06",
+      "name": "Heading 06",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use for the smallest heading level when text represents heading hierarchy, such as compact group titles or dense section headings; do not use as a component label.",
+      "cssVar": "--typography-heading-06",
+      "futureCssVar": null,
+      "properties": {
+        "fontFamily": "Euclid Circular A",
+        "fontWeight": 600,
+        "fontSize": "0.8125rem",
+        "lineHeight": "1.25rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1953",
+        "weight": "VariableID:56735:1954",
+        "size": "VariableID:56735:1955",
+        "line-height": "VariableID:56735:1956",
+        "letter-spacing": "VariableID:56735:1957"
+      }
+    },
+    {
+      "id": "typography.body.large",
+      "figmaStylePath": "Body/Large",
+      "name": "Body Large",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use for body copy that needs larger default readability; recommended as the base body font size for Edu experiences.",
+      "cssVar": "--typography-body-large",
+      "futureCssVar": null,
+      "properties": {
+        "fontFamily": "Euclid Circular A",
+        "fontWeight": 400,
+        "fontSize": "1rem",
+        "lineHeight": "1.5rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1850",
+        "weight": "VariableID:56735:1834",
+        "size": "VariableID:56732:1758",
+        "line-height": "VariableID:56732:1759",
+        "letter-spacing": "VariableID:56732:1760"
+      }
+    },
+    {
+      "id": "typography.body.medium",
+      "figmaStylePath": "Body/Medium",
+      "name": "Body Medium",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use for default product UI body text, descriptions, and readable supporting content; recommended as the base body font size for non-Edu products.",
+      "cssVar": "--typography-body-medium",
+      "futureCssVar": null,
+      "properties": {
+        "fontFamily": "Euclid Circular A",
+        "fontWeight": 400,
+        "fontSize": "0.8125rem",
+        "lineHeight": "1.25rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1853",
+        "weight": "VariableID:56735:1835",
+        "size": "VariableID:56732:1762",
+        "line-height": "VariableID:56732:1763",
+        "letter-spacing": "VariableID:56732:1764"
+      }
+    },
+    {
+      "id": "typography.code.large",
+      "figmaStylePath": "Code/Large",
+      "name": "Code Large",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use for larger code snippets, command examples, or monospace values that need more visual presence.",
+      "cssVar": "--typography-code-large",
+      "futureCssVar": null,
+      "properties": {
+        "fontFamily": "Source Code Pro",
+        "fontWeight": 400,
+        "fontSize": "0.9375rem",
+        "lineHeight": "1.5rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1958",
+        "weight": "VariableID:56735:1959",
+        "size": "VariableID:56735:1960",
+        "line-height": "VariableID:56735:1961",
+        "letter-spacing": "VariableID:56735:1962"
+      }
+    },
+    {
+      "id": "typography.code.medium",
+      "figmaStylePath": "Code/Medium",
+      "name": "Code Medium",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use for default inline code, compact code snippets, command examples, or monospace values.",
+      "cssVar": "--typography-code-medium",
+      "futureCssVar": null,
+      "properties": {
+        "fontFamily": "Source Code Pro",
+        "fontWeight": 400,
+        "fontSize": "0.8125rem",
+        "lineHeight": "1.25rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1963",
+        "weight": "VariableID:56735:1964",
+        "size": "VariableID:56735:1965",
+        "line-height": "VariableID:56735:1966",
+        "letter-spacing": "VariableID:56735:1967"
+      }
+    },
+    {
+      "id": "typography.label.large",
+      "figmaStylePath": "Label/Large",
+      "name": "Label Large",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use only for large label text in component building, such as button labels, form labels, or control labels; do not use for body copy, headings, or decorative emphasis.",
+      "cssVar": null,
+      "futureCssVar": "--typography-label-large",
+      "properties": {
+        "fontFamily": "Euclid Circular A",
+        "fontWeight": 500,
+        "fontSize": "1rem",
+        "lineHeight": "1.5rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1983",
+        "weight": "VariableID:56735:1984",
+        "size": "VariableID:56735:1985",
+        "line-height": "VariableID:56735:1986",
+        "letter-spacing": "VariableID:56735:1987"
+      }
+    },
+    {
+      "id": "typography.label.medium",
+      "figmaStylePath": "Label/Medium",
+      "name": "Label Medium",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use only for default label text in component building, such as button labels, form labels, table labels, or control labels; do not use for heading hierarchy, body copy, or general supporting text.",
+      "cssVar": null,
+      "futureCssVar": "--typography-label-medium",
+      "properties": {
+        "fontFamily": "Euclid Circular A",
+        "fontWeight": 500,
+        "fontSize": "0.8125rem",
+        "lineHeight": "1.25rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1988",
+        "weight": "VariableID:56735:1989",
+        "size": "VariableID:56735:1990",
+        "line-height": "VariableID:56735:1991",
+        "letter-spacing": "VariableID:56735:1992"
+      }
+    },
+    {
+      "id": "typography.label.small",
+      "figmaStylePath": "Label/Small",
+      "name": "Label Small",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use only for compact label text in dense component UI, small controls, or constrained spaces; do not use for body copy, captions, or decorative emphasis.",
+      "cssVar": null,
+      "futureCssVar": "--typography-label-small",
+      "properties": {
+        "fontFamily": "Euclid Circular A",
+        "fontWeight": 500,
+        "fontSize": "0.75rem",
+        "lineHeight": "1rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1968",
+        "weight": "VariableID:56735:1969",
+        "size": "VariableID:56735:1970",
+        "line-height": "VariableID:56735:1971",
+        "letter-spacing": "VariableID:56735:1972"
+      }
+    },
+    {
+      "id": "typography.utility.description",
+      "figmaStylePath": "Utility/Description",
+      "name": "Utility Description",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use for helper text, supplemental descriptions, and low-emphasis explanatory content near controls or settings; do not use for longer paragraphs.",
+      "cssVar": "--typography-description",
+      "futureCssVar": null,
+      "properties": {
+        "fontFamily": "Euclid Circular A",
+        "fontWeight": 400,
+        "fontSize": "0.75rem",
+        "lineHeight": "1rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1973",
+        "weight": "VariableID:56735:1974",
+        "size": "VariableID:56735:1975",
+        "line-height": "VariableID:56735:1976",
+        "letter-spacing": "VariableID:56735:1977"
+      }
+    },
+    {
+      "id": "typography.utility.disclaimer",
+      "figmaStylePath": "Utility/Disclaimer",
+      "name": "Utility Disclaimer",
+      "type": "typography-style",
+      "status": "draft",
+      "description": "Use for legal, compliance, or fine-print disclaimers that must remain readable but lower emphasis.",
+      "cssVar": "--typography-disclaimer",
+      "futureCssVar": null,
+      "properties": {
+        "fontFamily": "Euclid Circular A",
+        "fontWeight": 400,
+        "fontSize": "0.6875rem",
+        "lineHeight": "1rem",
+        "letterSpacing": "0px"
+      },
+      "sourceVariableIds": {
+        "font-family": "VariableID:56735:1978",
+        "weight": "VariableID:56735:1979",
+        "size": "VariableID:56735:1980",
+        "line-height": "VariableID:56735:1981",
+        "letter-spacing": "VariableID:56735:1982"
+      }
+    }
+  ]
+}

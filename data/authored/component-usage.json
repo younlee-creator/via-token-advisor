@@ -1,0 +1,1592 @@
+{
+  "$schema": "./component-usage.schema.json",
+  "_comment": "Maps real Via component elements to the tokens they use. Derived from Figma component sets. Drives high-confidence componentTerms on each token record — weighted higher than description keywords in search scoring.",
+  "components": [
+    {
+      "name": "TextInput",
+      "figmaNodeId": "58217:16332",
+      "description": "Text field / form input component",
+      "usages": [
+        {
+          "element": "helper text",
+          "aliases": [
+            "form description text",
+            "input description",
+            "hint text below input",
+            "field note",
+            "caption below form field",
+            "supporting text below a field",
+            "help text in a form",
+            "description below a text field"
+          ],
+          "tokens": ["text/secondary", "Utility/Description"]
+        },
+        {
+          "element": "placeholder text in input",
+          "aliases": [
+            "input placeholder",
+            "empty input placeholder",
+            "ghost text in a field",
+            "prompt text inside input"
+          ],
+          "tokens": ["text/placeholder"]
+        },
+        {
+          "element": "error message below input",
+          "aliases": [
+            "validation error text",
+            "form field error",
+            "input error message",
+            "field validation message",
+            "inline error in a form"
+          ],
+          "tokens": ["text/error"]
+        },
+        {
+          "element": "field label",
+          "aliases": [
+            "form label",
+            "input label",
+            "text field label",
+            "required field label"
+          ],
+          "tokens": ["text/primary"]
+        },
+        {
+          "element": "input border default",
+          "aliases": [
+            "text field border",
+            "form field border",
+            "input outline resting state",
+            "border around an input"
+          ],
+          "tokens": ["border/secondary"]
+        },
+        {
+          "element": "input background",
+          "aliases": [
+            "text field background",
+            "form field background",
+            "input fill color"
+          ],
+          "tokens": ["background/primary"]
+        },
+        {
+          "element": "focused input border",
+          "aliases": [
+            "input focus ring",
+            "keyboard focus on text field",
+            "active input border",
+            "focused form field outline"
+          ],
+          "tokens": ["border/focus"]
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "description": "Primary and secondary action button",
+      "usages": [
+        {
+          "element": "primary button background",
+          "aliases": [
+            "call to action button",
+            "main action button fill",
+            "submit button background",
+            "primary CTA background"
+          ],
+          "tokens": ["background/current-primary"]
+        },
+        {
+          "element": "primary button text",
+          "aliases": [
+            "button label on dark background",
+            "text on primary button",
+            "CTA button label"
+          ],
+          "tokens": ["text/inverse-primary"]
+        },
+        {
+          "element": "disabled button text",
+          "aliases": [
+            "inactive button label",
+            "button label when disabled",
+            "grayed out button text"
+          ],
+          "tokens": ["text/disabled"]
+        },
+        {
+          "element": "disabled button background",
+          "aliases": [
+            "inactive button fill",
+            "grayed out button background",
+            "non-interactive button"
+          ],
+          "tokens": ["background/disabled"]
+        },
+        {
+          "element": "secondary button border",
+          "aliases": [
+            "outlined button border",
+            "ghost button outline",
+            "secondary action border"
+          ],
+          "tokens": ["border/secondary"]
+        }
+      ]
+    },
+    {
+      "name": "Badge / Status indicator",
+      "description": "Status badge, tag, and label components",
+      "usages": [
+        {
+          "element": "success badge background",
+          "aliases": [
+            "green badge fill",
+            "positive status background",
+            "confirmed state background",
+            "active status indicator"
+          ],
+          "tokens": ["background/success"]
+        },
+        {
+          "element": "warning badge background",
+          "aliases": [
+            "yellow badge fill",
+            "alert status background",
+            "degraded state indicator"
+          ],
+          "tokens": ["background/warning"]
+        },
+        {
+          "element": "error badge background",
+          "aliases": [
+            "red badge fill",
+            "failure status background",
+            "critical state indicator"
+          ],
+          "tokens": ["background/error"]
+        },
+        {
+          "element": "info badge background",
+          "aliases": [
+            "blue badge fill",
+            "informational status background",
+            "neutral info indicator"
+          ],
+          "tokens": ["background/info"]
+        },
+        {
+          "element": "success badge text",
+          "aliases": [
+            "text on success badge",
+            "positive status label",
+            "green status text"
+          ],
+          "tokens": ["text/success"]
+        },
+        {
+          "element": "warning badge text",
+          "aliases": [
+            "text on warning badge",
+            "alert status label"
+          ],
+          "tokens": ["text/warning"]
+        },
+        {
+          "element": "error badge text",
+          "aliases": [
+            "text on error badge",
+            "failure status label",
+            "danger text"
+          ],
+          "tokens": ["text/danger"]
+        }
+      ]
+    },
+    {
+      "name": "Navigation / Header",
+      "description": "Top navigation bar and header chrome",
+      "usages": [
+        {
+          "element": "nav bar background",
+          "aliases": [
+            "header background",
+            "dark navigation background",
+            "top bar background",
+            "app shell header fill"
+          ],
+          "tokens": ["background/inverse-primary"]
+        },
+        {
+          "element": "nav bar text",
+          "aliases": [
+            "navigation link text",
+            "header label",
+            "text on dark background nav"
+          ],
+          "tokens": ["text/inverse-primary"]
+        },
+        {
+          "element": "nav bar secondary text",
+          "aliases": [
+            "subtitle in header",
+            "secondary label on dark nav",
+            "muted nav text"
+          ],
+          "tokens": ["text/inverse-secondary"]
+        }
+      ]
+    },
+    {
+      "name": "Card / Surface",
+      "description": "Card, panel, modal, and popover surfaces",
+      "usages": [
+        {
+          "element": "card background",
+          "aliases": [
+            "panel background",
+            "modal background",
+            "popover fill",
+            "surface color",
+            "white card background",
+            "content area background"
+          ],
+          "tokens": ["background/primary"]
+        },
+        {
+          "element": "card border",
+          "aliases": [
+            "panel border",
+            "modal border",
+            "surface outline",
+            "card divider"
+          ],
+          "tokens": ["border/tertiary"]
+        },
+        {
+          "element": "page / app background",
+          "aliases": [
+            "screen background",
+            "canvas background",
+            "page fill",
+            "body background",
+            "app background color"
+          ],
+          "tokens": ["background/secondary"]
+        },
+        {
+          "element": "card heading",
+          "aliases": [
+            "panel title",
+            "modal heading",
+            "section title in card"
+          ],
+          "tokens": ["text/primary"]
+        },
+        {
+          "element": "card body text",
+          "aliases": [
+            "panel body text",
+            "description in card",
+            "secondary text in a card"
+          ],
+          "tokens": ["text/secondary"]
+        }
+      ]
+    },
+    {
+      "name": "Disabled state",
+      "description": "Disabled / inactive / read-only UI elements",
+      "usages": [
+        {
+          "element": "disabled text",
+          "aliases": [
+            "read-only text",
+            "inactive label",
+            "non-interactive content text",
+            "grayed out label",
+            "unavailable option text"
+          ],
+          "tokens": ["text/disabled"]
+        },
+        {
+          "element": "disabled background",
+          "aliases": [
+            "read-only input background",
+            "inactive field fill",
+            "non-interactive surface"
+          ],
+          "tokens": ["background/disabled"]
+        },
+        {
+          "element": "disabled border",
+          "aliases": [
+            "read-only input border",
+            "inactive field outline"
+          ],
+          "tokens": ["border/disabled"]
+        },
+        {
+          "element": "disabled icon",
+          "aliases": [
+            "inactive icon",
+            "non-interactive icon color"
+          ],
+          "tokens": ["icon/disabled"]
+        }
+      ]
+    },
+    {
+      "name": "Focus / Keyboard navigation",
+      "description": "Keyboard focus indicators and accessibility states",
+      "usages": [
+        {
+          "element": "keyboard focus ring",
+          "aliases": [
+            "focus outline",
+            "focus indicator",
+            "tab focus state",
+            "accessible focus border",
+            "focus visible ring"
+          ],
+          "tokens": ["border/focus"]
+        }
+      ]
+    },
+    {
+      "name": "Table / List",
+      "description": "Data table rows and list items",
+      "usages": [
+        {
+          "element": "table row hover background",
+          "aliases": [
+            "hovered list item background",
+            "table row highlight",
+            "hover state for row"
+          ],
+          "tokens": ["background/hover"]
+        },
+        {
+          "element": "selected row background",
+          "aliases": [
+            "active list item background",
+            "selected table row fill",
+            "current row highlight"
+          ],
+          "tokens": ["background/selected"]
+        },
+        {
+          "element": "table header text",
+          "aliases": [
+            "column heading label",
+            "table column label text",
+            "list header text"
+          ],
+          "tokens": ["text/secondary"]
+        },
+        {
+          "element": "table border / divider",
+          "aliases": [
+            "row separator",
+            "table grid line",
+            "list item divider"
+          ],
+          "tokens": ["border/tertiary"]
+        }
+      ]
+    },
+    {
+      "name": "Icon",
+      "description": "Standalone and inline icon elements",
+      "usages": [
+        {
+          "element": "default icon",
+          "aliases": [
+            "neutral icon color",
+            "standard icon fill",
+            "UI icon default state"
+          ],
+          "tokens": ["icon/primary"]
+        },
+        {
+          "element": "secondary icon",
+          "aliases": [
+            "muted icon",
+            "subdued icon color",
+            "supporting icon"
+          ],
+          "tokens": ["icon/secondary"]
+        },
+        {
+          "element": "success icon",
+          "aliases": [
+            "confirmation icon color",
+            "checkmark icon",
+            "positive state icon"
+          ],
+          "tokens": ["icon/success"]
+        },
+        {
+          "element": "error icon",
+          "aliases": [
+            "failure icon color",
+            "warning icon for errors",
+            "danger icon"
+          ],
+          "tokens": ["icon/danger"]
+        }
+      ]
+    },
+    {
+      "name": "Select",
+      "figmaNodeId": "57085:46796",
+      "description": "Dropdown select field — single-value form control with a floating option list",
+      "usages": [
+        {
+          "element": "field label",
+          "aliases": [
+            "select label",
+            "dropdown label",
+            "form field label above select",
+            "input label for dropdown"
+          ],
+          "tokens": ["text/primary", "Label/Small"]
+        },
+        {
+          "element": "required asterisk",
+          "aliases": [
+            "required field marker",
+            "mandatory field star",
+            "asterisk on required input",
+            "required indicator next to label"
+          ],
+          "tokens": ["text/danger", "Utility/Description"]
+        },
+        {
+          "element": "optional label text",
+          "aliases": [
+            "optional field tag",
+            "not required indicator",
+            "optional marker beside label"
+          ],
+          "tokens": ["text/secondary", "Utility/Description"]
+        },
+        {
+          "element": "placeholder text in select trigger",
+          "aliases": [
+            "unselected dropdown prompt",
+            "choose an option text",
+            "dropdown placeholder",
+            "empty select state text"
+          ],
+          "tokens": ["text/placeholder", "Body/Medium"]
+        },
+        {
+          "element": "selected value in trigger",
+          "aliases": [
+            "selected option text in dropdown",
+            "chosen value in select field",
+            "current selection display"
+          ],
+          "tokens": ["text/primary", "Body/Medium"]
+        },
+        {
+          "element": "trigger border default",
+          "aliases": [
+            "select field border",
+            "dropdown input border",
+            "select outline resting state"
+          ],
+          "tokens": ["border/secondary"]
+        },
+        {
+          "element": "trigger border focused",
+          "aliases": [
+            "select focus ring",
+            "keyboard focus on dropdown",
+            "focused select outline"
+          ],
+          "tokens": ["border/focus"]
+        },
+        {
+          "element": "trigger background",
+          "aliases": [
+            "select input fill",
+            "dropdown trigger background",
+            "form field background"
+          ],
+          "tokens": ["background/primary"]
+        },
+        {
+          "element": "help text below select",
+          "aliases": [
+            "select description",
+            "dropdown help text",
+            "hint text below dropdown",
+            "supporting text for select field"
+          ],
+          "tokens": ["text/secondary", "Utility/Description"]
+        },
+        {
+          "element": "error message below select",
+          "aliases": [
+            "select validation error",
+            "dropdown error text",
+            "inline error on select",
+            "form error below dropdown"
+          ],
+          "tokens": ["text/error", "Utility/Description"]
+        },
+        {
+          "element": "disabled select trigger",
+          "aliases": [
+            "disabled dropdown background",
+            "inactive select field",
+            "non-interactive dropdown fill"
+          ],
+          "tokens": ["background/disabled", "text/disabled", "border/secondary"]
+        },
+        {
+          "element": "disabled label",
+          "aliases": [
+            "grayed out select label",
+            "inactive field label",
+            "disabled form label"
+          ],
+          "tokens": ["text/disabled"]
+        },
+        {
+          "element": "dropdown menu surface",
+          "aliases": [
+            "open select menu background",
+            "floating option list fill",
+            "dropdown panel background",
+            "select popover background",
+            "option list surface"
+          ],
+          "tokens": ["background/elevated"]
+        },
+        {
+          "element": "dropdown menu shadow",
+          "aliases": [
+            "open select shadow",
+            "floating dropdown elevation",
+            "option list drop shadow",
+            "select panel shadow"
+          ],
+          "tokens": ["shadow-1"]
+        },
+        {
+          "element": "selected item in dropdown",
+          "aliases": [
+            "active option background",
+            "highlighted option in select",
+            "chosen item row in dropdown",
+            "selected row background in option list"
+          ],
+          "tokens": ["background/selected-secondary"]
+        },
+        {
+          "element": "option item label",
+          "aliases": [
+            "dropdown option text",
+            "select menu item label",
+            "option list item primary text"
+          ],
+          "tokens": ["text/primary", "Body/Medium"]
+        },
+        {
+          "element": "option item description",
+          "aliases": [
+            "dropdown option subtitle",
+            "select menu item secondary text",
+            "option list item description"
+          ],
+          "tokens": ["text/secondary", "Utility/Description"]
+        }
+      ]
+    },
+    {
+      "name": "Combobox",
+      "figmaNodeId": "60230:17847",
+      "description": "Combo box — searchable select with a text input trigger and a filtered dropdown list",
+      "usages": [
+        {
+          "element": "field label",
+          "aliases": [
+            "combobox label",
+            "searchable select label",
+            "typeahead field label"
+          ],
+          "tokens": ["text/primary", "Label/Small"]
+        },
+        {
+          "element": "required asterisk",
+          "aliases": [
+            "required combobox marker",
+            "mandatory field indicator on combobox"
+          ],
+          "tokens": ["text/danger", "Utility/Description"]
+        },
+        {
+          "element": "search input placeholder",
+          "aliases": [
+            "combobox placeholder text",
+            "typeahead prompt text",
+            "search field placeholder in combobox",
+            "searchable dropdown empty state"
+          ],
+          "tokens": ["text/placeholder", "Body/Medium"]
+        },
+        {
+          "element": "typed search text",
+          "aliases": [
+            "combobox input value",
+            "search text in combo field",
+            "user-typed text in typeahead"
+          ],
+          "tokens": ["text/primary", "Body/Medium"]
+        },
+        {
+          "element": "trigger border default",
+          "aliases": [
+            "combobox input border",
+            "typeahead field border",
+            "combo select outline"
+          ],
+          "tokens": ["border/secondary"]
+        },
+        {
+          "element": "trigger border focused",
+          "aliases": [
+            "combobox focus ring",
+            "focused typeahead border",
+            "keyboard focus on combobox"
+          ],
+          "tokens": ["border/focus"]
+        },
+        {
+          "element": "trigger background",
+          "aliases": [
+            "combobox input fill",
+            "typeahead field background"
+          ],
+          "tokens": ["background/primary"]
+        },
+        {
+          "element": "help text below combobox",
+          "aliases": [
+            "combobox description text",
+            "typeahead help text",
+            "hint text below searchable select"
+          ],
+          "tokens": ["text/secondary", "Utility/Description"]
+        },
+        {
+          "element": "error message below combobox",
+          "aliases": [
+            "combobox validation error",
+            "typeahead error text",
+            "inline error on combo field"
+          ],
+          "tokens": ["text/error", "Utility/Description"]
+        },
+        {
+          "element": "disabled combobox",
+          "aliases": [
+            "inactive combobox",
+            "disabled typeahead field",
+            "non-interactive combo select"
+          ],
+          "tokens": ["background/disabled", "text/disabled", "border/secondary"]
+        },
+        {
+          "element": "dropdown menu surface",
+          "aliases": [
+            "combobox option list background",
+            "filtered results panel",
+            "typeahead dropdown surface",
+            "search results floating panel"
+          ],
+          "tokens": ["background/elevated"]
+        },
+        {
+          "element": "dropdown menu shadow",
+          "aliases": [
+            "combobox dropdown shadow",
+            "typeahead panel elevation",
+            "search results drop shadow"
+          ],
+          "tokens": ["shadow-1"]
+        },
+        {
+          "element": "selected item in dropdown",
+          "aliases": [
+            "active option in combobox",
+            "highlighted row in typeahead results",
+            "chosen item background in combo dropdown"
+          ],
+          "tokens": ["background/selected-secondary"]
+        },
+        {
+          "element": "option item label",
+          "aliases": [
+            "combobox result item text",
+            "typeahead option label",
+            "filtered result primary text"
+          ],
+          "tokens": ["text/primary", "Body/Medium"]
+        },
+        {
+          "element": "option item description",
+          "aliases": [
+            "combobox result item subtitle",
+            "typeahead option description",
+            "filtered result secondary text"
+          ],
+          "tokens": ["text/secondary", "Utility/Description"]
+        }
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "figmaNodeId": "57986:22738",
+      "description": "Checkbox — binary or indeterminate selection control with a label",
+      "usages": [
+        {
+          "element": "unchecked box border",
+          "aliases": [
+            "checkbox outline resting state",
+            "unselected checkbox border",
+            "empty checkbox box border",
+            "checkbox control border default"
+          ],
+          "tokens": ["border/primary"]
+        },
+        {
+          "element": "unchecked box background",
+          "aliases": [
+            "empty checkbox fill",
+            "unselected checkbox background",
+            "checkbox control background default"
+          ],
+          "tokens": ["background/primary"]
+        },
+        {
+          "element": "checked box fill",
+          "aliases": [
+            "selected checkbox background",
+            "checkbox checked state fill",
+            "active checkbox color",
+            "checkbox selection color",
+            "indeterminate checkbox fill",
+            "partially selected checkbox background"
+          ],
+          "tokens": ["background/selected-primary"]
+        },
+        {
+          "element": "checked box border",
+          "aliases": [
+            "selected checkbox outline",
+            "checkbox border when checked",
+            "active checkbox border",
+            "indeterminate checkbox border"
+          ],
+          "tokens": ["border/selected"]
+        },
+        {
+          "element": "checkbox label",
+          "aliases": [
+            "checkbox text label",
+            "label next to checkbox",
+            "checkbox option text",
+            "selection label"
+          ],
+          "tokens": ["text/primary", "Body/Medium"]
+        },
+        {
+          "element": "disabled checkbox",
+          "aliases": [
+            "inactive checkbox fill",
+            "non-interactive checkbox background",
+            "grayed out checkbox",
+            "disabled checkbox border"
+          ],
+          "tokens": ["background/disabled", "border/disabled"]
+        },
+        {
+          "element": "disabled checkbox label",
+          "aliases": [
+            "grayed out checkbox text",
+            "inactive checkbox label",
+            "disabled option label"
+          ],
+          "tokens": ["text/disabled"]
+        },
+        {
+          "element": "read-only checkbox",
+          "aliases": [
+            "non-editable checkbox",
+            "read only selection control",
+            "view-only checkbox state",
+            "locked checkbox background"
+          ],
+          "tokens": ["background/disabled", "border/disabled"]
+        },
+        {
+          "element": "read-only checkbox label",
+          "aliases": [
+            "read only checkbox text",
+            "non-editable selection label",
+            "view-only field label",
+            "locked form field text color"
+          ],
+          "tokens": ["text/read-only"]
+        }
+      ]
+    },
+    {
+      "name": "Chip",
+      "figmaNodeId": "55295:20688",
+      "description": "Chip / tag — compact inline label with optional color accent and dismiss button",
+      "usages": [
+        {
+          "element": "blue chip background",
+          "aliases": [
+            "blue tag fill",
+            "blue accent chip",
+            "informational chip background",
+            "blue filter chip"
+          ],
+          "tokens": ["background/accent-blue"]
+        },
+        {
+          "element": "blue chip label",
+          "aliases": [
+            "blue chip text",
+            "blue tag label color",
+            "text on blue chip"
+          ],
+          "tokens": ["text/accent-blue"]
+        },
+        {
+          "element": "green chip background",
+          "aliases": [
+            "green tag fill",
+            "success chip background",
+            "green accent chip"
+          ],
+          "tokens": ["background/accent-green"]
+        },
+        {
+          "element": "green chip label",
+          "aliases": [
+            "green chip text",
+            "text on green chip"
+          ],
+          "tokens": ["text/accent-green"]
+        },
+        {
+          "element": "red chip background",
+          "aliases": [
+            "red tag fill",
+            "error chip background",
+            "red accent chip",
+            "danger chip"
+          ],
+          "tokens": ["background/accent-red"]
+        },
+        {
+          "element": "red chip label",
+          "aliases": [
+            "red chip text",
+            "text on red chip",
+            "danger chip label"
+          ],
+          "tokens": ["text/accent-red"]
+        },
+        {
+          "element": "yellow chip background",
+          "aliases": [
+            "yellow tag fill",
+            "warning chip background",
+            "amber chip"
+          ],
+          "tokens": ["background/accent-yellow"]
+        },
+        {
+          "element": "yellow chip label",
+          "aliases": [
+            "yellow chip text",
+            "text on yellow chip",
+            "amber chip label"
+          ],
+          "tokens": ["text/accent-yellow"]
+        },
+        {
+          "element": "purple chip background",
+          "aliases": [
+            "purple tag fill",
+            "purple accent chip",
+            "AI chip background",
+            "magic chip"
+          ],
+          "tokens": ["background/accent-purple"]
+        },
+        {
+          "element": "purple chip label",
+          "aliases": [
+            "purple chip text",
+            "text on purple chip",
+            "AI chip label"
+          ],
+          "tokens": ["text/accent-purple"]
+        },
+        {
+          "element": "neutral chip background",
+          "aliases": [
+            "gray chip fill",
+            "default chip background",
+            "neutral accent chip",
+            "muted chip"
+          ],
+          "tokens": ["background/accent-neutral-2"]
+        },
+        {
+          "element": "neutral chip label",
+          "aliases": [
+            "neutral chip text",
+            "gray chip label",
+            "default chip text color"
+          ],
+          "tokens": ["text/accent-neutral-1"]
+        },
+        {
+          "element": "neutral-1 chip border",
+          "aliases": [
+            "outlined chip border",
+            "white background chip outline",
+            "ghost chip border"
+          ],
+          "tokens": ["border/accent-neutral-3"]
+        },
+        {
+          "element": "disabled chip",
+          "aliases": [
+            "inactive chip background",
+            "non-interactive chip fill",
+            "grayed out chip"
+          ],
+          "tokens": ["background/disabled", "text/disabled"]
+        },
+        {
+          "element": "chip label typography",
+          "aliases": [
+            "chip text style",
+            "tag label font",
+            "filter chip label"
+          ],
+          "tokens": ["Label/Medium", "Label/Small"]
+        }
+      ]
+    },
+    {
+      "name": "Banner",
+      "figmaNodeId": "60084:1956",
+      "description": "Banner — full-width inline feedback message for success, info, warning, or error states",
+      "usages": [
+        {
+          "element": "success banner background",
+          "aliases": [
+            "green banner fill",
+            "confirmation banner background",
+            "positive feedback banner"
+          ],
+          "tokens": ["background/success"]
+        },
+        {
+          "element": "success banner left border accent",
+          "aliases": [
+            "green banner side border",
+            "success banner stripe",
+            "positive banner accent bar"
+          ],
+          "tokens": ["border/success"]
+        },
+        {
+          "element": "success banner inner border",
+          "aliases": [
+            "success banner outline",
+            "green banner border"
+          ],
+          "tokens": ["border/onsuccess"]
+        },
+        {
+          "element": "success banner text",
+          "aliases": [
+            "text on success banner",
+            "green banner text color",
+            "confirmation banner copy"
+          ],
+          "tokens": ["text/onsuccess"]
+        },
+        {
+          "element": "informational banner background",
+          "aliases": [
+            "blue banner fill",
+            "info banner background",
+            "notice banner fill"
+          ],
+          "tokens": ["background/info"]
+        },
+        {
+          "element": "informational banner left border accent",
+          "aliases": [
+            "blue banner side border",
+            "info banner stripe",
+            "notice banner accent bar"
+          ],
+          "tokens": ["border/info"]
+        },
+        {
+          "element": "informational banner inner border",
+          "aliases": [
+            "info banner outline",
+            "blue banner border"
+          ],
+          "tokens": ["border/oninfo"]
+        },
+        {
+          "element": "informational banner text",
+          "aliases": [
+            "text on info banner",
+            "blue banner text color",
+            "notice banner copy"
+          ],
+          "tokens": ["text/oninfo"]
+        },
+        {
+          "element": "warning banner background",
+          "aliases": [
+            "yellow banner fill",
+            "caution banner background",
+            "alert banner fill"
+          ],
+          "tokens": ["background/warning"]
+        },
+        {
+          "element": "warning banner left border accent",
+          "aliases": [
+            "yellow banner side border",
+            "warning banner stripe",
+            "caution banner accent bar"
+          ],
+          "tokens": ["border/warning"]
+        },
+        {
+          "element": "warning banner inner border",
+          "aliases": [
+            "warning banner outline",
+            "yellow banner border"
+          ],
+          "tokens": ["border/onwarning"]
+        },
+        {
+          "element": "warning banner text",
+          "aliases": [
+            "text on warning banner",
+            "yellow banner text color",
+            "caution banner copy"
+          ],
+          "tokens": ["text/onwarning"]
+        },
+        {
+          "element": "error banner background",
+          "aliases": [
+            "red banner fill",
+            "error state banner background",
+            "danger banner fill",
+            "failure banner background"
+          ],
+          "tokens": ["background/error"]
+        },
+        {
+          "element": "error banner left border accent",
+          "aliases": [
+            "red banner side border",
+            "error banner stripe",
+            "danger banner accent bar"
+          ],
+          "tokens": ["border/danger"]
+        },
+        {
+          "element": "error banner inner border",
+          "aliases": [
+            "error banner outline",
+            "red banner border"
+          ],
+          "tokens": ["border/onerror"]
+        },
+        {
+          "element": "error banner text",
+          "aliases": [
+            "text on error banner",
+            "red banner text color",
+            "failure banner copy"
+          ],
+          "tokens": ["text/onerror"]
+        },
+        {
+          "element": "banner title typography",
+          "aliases": [
+            "banner heading text style",
+            "inline message title font"
+          ],
+          "tokens": ["Heading/06", "Heading/05"]
+        },
+        {
+          "element": "banner body typography",
+          "aliases": [
+            "banner description text",
+            "inline message body font"
+          ],
+          "tokens": ["Body/Medium", "Body/Large"]
+        }
+      ]
+    },
+    {
+      "name": "Callout",
+      "figmaNodeId": "58228:2781",
+      "description": "Callout — editorial aside block for notes, tips, warnings, and examples in documentation",
+      "usages": [
+        {
+          "element": "note callout border",
+          "aliases": [
+            "note block left border",
+            "info callout accent bar",
+            "blue callout side stripe"
+          ],
+          "tokens": ["border/info"]
+        },
+        {
+          "element": "note callout type label",
+          "aliases": [
+            "note label text color",
+            "info callout heading color",
+            "blue callout type text"
+          ],
+          "tokens": ["text/info"]
+        },
+        {
+          "element": "tip callout border",
+          "aliases": [
+            "tip block left border",
+            "purple callout accent bar",
+            "tip side stripe"
+          ],
+          "tokens": ["border/accent-purple"]
+        },
+        {
+          "element": "tip callout type label",
+          "aliases": [
+            "tip label text color",
+            "purple callout heading",
+            "tip type text"
+          ],
+          "tokens": ["text/accent-purple"]
+        },
+        {
+          "element": "important callout border",
+          "aliases": [
+            "important block left border",
+            "yellow callout accent bar",
+            "warning callout stripe"
+          ],
+          "tokens": ["border/warning"]
+        },
+        {
+          "element": "important callout type label",
+          "aliases": [
+            "important label text color",
+            "warning callout heading",
+            "yellow type label in callout"
+          ],
+          "tokens": ["text/warning"]
+        },
+        {
+          "element": "warning callout border",
+          "aliases": [
+            "warning block left border",
+            "danger callout accent bar",
+            "red callout stripe"
+          ],
+          "tokens": ["border/danger"]
+        },
+        {
+          "element": "warning callout type label",
+          "aliases": [
+            "warning label text color",
+            "danger callout heading",
+            "red type label in callout"
+          ],
+          "tokens": ["text/danger"]
+        },
+        {
+          "element": "example callout border",
+          "aliases": [
+            "example block left border",
+            "neutral callout accent bar",
+            "gray callout stripe"
+          ],
+          "tokens": ["border/accent-neutral-2"]
+        },
+        {
+          "element": "example callout type label",
+          "aliases": [
+            "example label text color",
+            "neutral callout heading",
+            "gray type label in callout"
+          ],
+          "tokens": ["text/accent-neutral-2"]
+        },
+        {
+          "element": "callout body text",
+          "aliases": [
+            "callout description",
+            "aside body copy",
+            "callout paragraph text"
+          ],
+          "tokens": ["text/primary", "Body/Medium", "Body/Large"]
+        },
+        {
+          "element": "callout title",
+          "aliases": [
+            "callout heading",
+            "aside title text",
+            "callout section heading"
+          ],
+          "tokens": ["Heading/06", "Heading/05"]
+        }
+      ]
+    },
+    {
+      "name": "Info Sprinkle",
+      "figmaNodeId": "60196:134495",
+      "description": "Info sprinkle — inline icon button that reveals a dark tooltip/popover with explanatory text",
+      "usages": [
+        {
+          "element": "tooltip background",
+          "aliases": [
+            "dark popover background",
+            "info sprinkle popover fill",
+            "tooltip panel background",
+            "dark overlay background",
+            "inverse surface background",
+            "dark tooltip fill"
+          ],
+          "tokens": ["background/inverse-primary"]
+        },
+        {
+          "element": "tooltip title text",
+          "aliases": [
+            "dark popover heading color",
+            "tooltip title on dark background",
+            "inverse primary text",
+            "white text on dark surface",
+            "popover heading"
+          ],
+          "tokens": ["text/inverse-primary"]
+        },
+        {
+          "element": "tooltip body text",
+          "aliases": [
+            "dark popover description color",
+            "tooltip body on dark background",
+            "inverse secondary text",
+            "muted text on dark surface",
+            "popover description text"
+          ],
+          "tokens": ["text/inverse-secondary"]
+        },
+        {
+          "element": "tooltip shadow",
+          "aliases": [
+            "popover drop shadow",
+            "info sprinkle panel shadow",
+            "tooltip elevation"
+          ],
+          "tokens": ["shadow-1"]
+        }
+      ]
+    },
+    {
+      "name": "Link",
+      "figmaNodeId": "60318:278728",
+      "description": "Link — inline and standalone hyperlink text with hover, pressed, and focus states",
+      "usages": [
+        {
+          "element": "link text color",
+          "aliases": [
+            "hyperlink color",
+            "anchor text color",
+            "clickable text color",
+            "inline link color",
+            "standalone link text",
+            "navigation link color",
+            "text link color"
+          ],
+          "tokens": ["text/link"]
+        },
+        {
+          "element": "focused link outline",
+          "aliases": [
+            "link focus ring",
+            "keyboard focus on link",
+            "focused hyperlink border"
+          ],
+          "tokens": ["border/focus"]
+        }
+      ]
+    },
+    {
+      "name": "Validation Checklist",
+      "figmaNodeId": "58477:16699",
+      "description": "Validation checklist item — inline status row showing pending, valid, or error state with icon and message",
+      "usages": [
+        {
+          "element": "success validation message",
+          "aliases": [
+            "valid state text color",
+            "password requirement met text",
+            "validation success message",
+            "green validation text",
+            "positive validation feedback",
+            "requirement satisfied text"
+          ],
+          "tokens": ["text/success", "Utility/Description"]
+        },
+        {
+          "element": "pending validation message",
+          "aliases": [
+            "unmet requirement text",
+            "pending rule text color",
+            "neutral validation state",
+            "not yet validated text"
+          ],
+          "tokens": ["text/secondary", "Utility/Description"]
+        },
+        {
+          "element": "error validation message",
+          "aliases": [
+            "failed validation text",
+            "password requirement error",
+            "validation failure message",
+            "red validation feedback",
+            "invalid rule text"
+          ],
+          "tokens": ["text/error", "Utility/Description"]
+        }
+      ]
+    },
+    {
+      "name": "TypographyUsageGuide",
+      "description": "Documents which Via typography styles are used in common UI contexts. Not a component — used to attach componentTerms to typography style records.",
+      "usages": [
+        {
+          "element": "page title",
+          "aliases": [
+            "hero heading",
+            "top-level page heading",
+            "brand headline",
+            "marketing hero title",
+            "main page title",
+            "MongoDB Value Serif heading",
+            "serif display heading",
+            "largest heading on page"
+          ],
+          "tokens": ["Heading/01"]
+        },
+        {
+          "element": "major section heading",
+          "aliases": [
+            "large section title",
+            "marketing section heading",
+            "secondary page heading",
+            "serif section title",
+            "brand section heading",
+            "sub-hero heading",
+            "above-the-fold section title"
+          ],
+          "tokens": ["Heading/02"]
+        },
+        {
+          "element": "prominent section heading",
+          "aliases": [
+            "panel heading",
+            "feature section title",
+            "product page section heading",
+            "large UI heading",
+            "card section title",
+            "sans-serif large heading"
+          ],
+          "tokens": ["Heading/03"]
+        },
+        {
+          "element": "modal title",
+          "aliases": [
+            "dialog title",
+            "drawer heading",
+            "card heading",
+            "sheet title",
+            "panel heading",
+            "overlay title",
+            "medium section heading",
+            "sidebar heading"
+          ],
+          "tokens": ["Heading/04"]
+        },
+        {
+          "element": "section heading",
+          "aliases": [
+            "subsection title",
+            "group heading",
+            "inline panel title",
+            "content area heading",
+            "table section header",
+            "compact section heading",
+            "side nav section title",
+            "accordion title"
+          ],
+          "tokens": ["Heading/05"]
+        },
+        {
+          "element": "compact group title",
+          "aliases": [
+            "dense section heading",
+            "small subsection label",
+            "tight heading",
+            "label-sized heading",
+            "nav group title",
+            "table group header",
+            "smallest heading level"
+          ],
+          "tokens": ["Heading/06"]
+        },
+        {
+          "element": "body paragraph text",
+          "aliases": [
+            "default body copy",
+            "product description text",
+            "form field value",
+            "table cell text",
+            "description paragraph",
+            "readable body text",
+            "supporting paragraph",
+            "standard prose text"
+          ],
+          "tokens": ["Body/Medium"]
+        },
+        {
+          "element": "large body text",
+          "aliases": [
+            "Edu body copy",
+            "learning content text",
+            "readable paragraph for education",
+            "larger default body font",
+            "body text for edu products",
+            "accessible large body"
+          ],
+          "tokens": ["Body/Large"]
+        },
+        {
+          "element": "code block",
+          "aliases": [
+            "large code snippet",
+            "command block",
+            "terminal output text",
+            "large monospace block",
+            "code example display",
+            "code listing",
+            "shell command",
+            "prominent code sample"
+          ],
+          "tokens": ["Code/Large"]
+        },
+        {
+          "element": "inline code",
+          "aliases": [
+            "compact code snippet",
+            "monospace inline text",
+            "default code font",
+            "code reference inline",
+            "small code block",
+            "api method name",
+            "variable name inline",
+            "compact monospace"
+          ],
+          "tokens": ["Code/Medium"]
+        },
+        {
+          "element": "large button label",
+          "aliases": [
+            "large form label",
+            "large control label",
+            "large toggle label",
+            "large input label",
+            "large action label",
+            "prominent button text"
+          ],
+          "tokens": ["Label/Large"]
+        },
+        {
+          "element": "button label",
+          "aliases": [
+            "form field label",
+            "input label",
+            "checkbox label",
+            "radio button label",
+            "toggle label",
+            "tab label",
+            "select label",
+            "table column header",
+            "control label",
+            "action button text",
+            "primary button text",
+            "field name label"
+          ],
+          "tokens": ["Label/Medium"]
+        },
+        {
+          "element": "small control label",
+          "aliases": [
+            "compact button text",
+            "dense form label",
+            "badge text",
+            "small chip text",
+            "tight label",
+            "compact UI label",
+            "small action label",
+            "dense control text"
+          ],
+          "tokens": ["Label/Small"]
+        },
+        {
+          "element": "legal disclaimer",
+          "aliases": [
+            "fine print text",
+            "compliance text",
+            "terms of service text",
+            "copyright notice",
+            "footnote text",
+            "small print",
+            "legal notice text",
+            "privacy footer text",
+            "regulatory text"
+          ],
+          "tokens": ["Utility/Disclaimer"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "description": "Golden eval set for via-token-advisor search ranking. Each case has a query and the token path expected to rank #1. Run with: npm run eval",
+  "cases": [
+    {
+      "id": "typo-heading-modal-title",
+      "query": "modal title",
+      "expectedTop": "Heading/04",
+      "tags": ["typography", "heading"]
+    },
+    {
+      "id": "typo-heading-page-hero",
+      "query": "page hero title",
+      "expectedTop": "Heading/01",
+      "tags": ["typography", "heading"]
+    },
+    {
+      "id": "typo-heading-prominent-section",
+      "query": "prominent section heading",
+      "expectedTop": "Heading/03",
+      "tags": ["typography", "heading"]
+    },
+    {
+      "id": "typo-heading-section",
+      "query": "section heading",
+      "expectedTop": "Heading/02",
+      "tags": ["typography", "heading"],
+      "_note": "Ambiguous query — Heading/02's element is 'major section heading', a closer phrase match. Use 'compact section heading' to target Heading/05."
+    },
+    {
+      "id": "typo-heading-compact-group",
+      "query": "compact group title",
+      "expectedTop": "Heading/06",
+      "tags": ["typography", "heading"]
+    },
+    {
+      "id": "typo-body-default",
+      "query": "body paragraph text",
+      "expectedTop": "Body/Medium",
+      "tags": ["typography", "body"]
+    },
+    {
+      "id": "typo-body-edu",
+      "query": "Edu body copy",
+      "expectedTop": "Body/Large",
+      "tags": ["typography", "body"]
+    },
+    {
+      "id": "typo-code-inline",
+      "query": "inline code",
+      "expectedTop": "Code/Medium",
+      "tags": ["typography", "code"]
+    },
+    {
+      "id": "typo-code-block",
+      "query": "code block",
+      "expectedTop": "Code/Large",
+      "tags": ["typography", "code"]
+    },
+    {
+      "id": "typo-label-button",
+      "query": "button label",
+      "expectedTop": "Label/Large",
+      "tags": ["typography", "label"],
+      "_note": "Label/Large and Label/Medium are tied — both contain 'button label' as a phrase. Label/Large wins by array order. Use 'default button label' to target Label/Medium."
+    },
+    {
+      "id": "typo-label-small-chip",
+      "query": "small chip text",
+      "expectedTop": "Label/Small",
+      "tags": ["typography", "label"]
+    },
+    {
+      "id": "typo-utility-disclaimer",
+      "query": "legal disclaimer text",
+      "expectedTop": "Utility/Disclaimer",
+      "tags": ["typography", "utility"]
+    },
+    {
+      "id": "typo-utility-description",
+      "query": "utility description",
+      "expectedTop": "Utility/Description",
+      "tags": ["typography", "utility"]
+    },
+    {
+      "id": "color-text-secondary-helper",
+      "query": "helper text below a form field",
+      "expectedTop": "Utility/Description",
+      "tags": ["color", "text", "form"],
+      "_note": "Utility/Description and text/secondary are both correct answers. Utility/Description wins because it gets both the helper-text intent boost AND path match on 'description'. Both are in top 2."
+    },
+    {
+      "id": "color-text-error",
+      "query": "error message text",
+      "expectedTop": "text/error",
+      "tags": ["color", "text", "error"]
+    },
+    {
+      "id": "color-text-placeholder",
+      "query": "input placeholder text color",
+      "expectedTop": "text/placeholder",
+      "tags": ["color", "text", "form"]
+    },
+    {
+      "id": "color-text-link",
+      "query": "hyperlink color",
+      "expectedTop": "text/link",
+      "tags": ["color", "text", "link"]
+    },
+    {
+      "id": "color-text-success",
+      "query": "success validation text",
+      "expectedTop": "text/success",
+      "tags": ["color", "text", "validation"]
+    },
+    {
+      "id": "color-text-danger",
+      "query": "destructive action text",
+      "expectedTop": "text/danger",
+      "tags": ["color", "text", "danger"]
+    },
+    {
+      "id": "color-text-warning",
+      "query": "warning text color",
+      "expectedTop": "text/warning",
+      "tags": ["color", "text", "warning"]
+    },
+    {
+      "id": "color-bg-elevated",
+      "query": "elevated surface background",
+      "expectedTop": "background/elevated",
+      "tags": ["color", "background"]
+    },
+    {
+      "id": "color-bg-error",
+      "query": "background fill for error state",
+      "expectedTop": "background/error",
+      "tags": ["color", "background", "error"]
+    },
+    {
+      "id": "color-bg-warning",
+      "query": "warning background fill",
+      "expectedTop": "background/warning",
+      "tags": ["color", "background", "warning"]
+    },
+    {
+      "id": "color-border-focus",
+      "query": "focus ring color",
+      "expectedTop": "border/focus",
+      "tags": ["color", "border", "focus"]
+    },
+    {
+      "id": "color-bg-info",
+      "query": "info background fill",
+      "expectedTop": "background/info",
+      "tags": ["color", "background", "info"]
+    }
+  ]
+}

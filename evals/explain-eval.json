@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "description": "Eval set for via-token-advisor explain_token. Tests correct resolution from various identifier formats, presence of notFor guidance, and not-found/ambiguous handling. Run with: npm run eval:explain",
+  "cases": [
+    {
+      "id": "exact-path-secondary",
+      "identifier": "text/secondary",
+      "expectedFound": true,
+      "expectedPath": "text/secondary",
+      "notForMustContain": "primary",
+      "tags": ["lookup", "exact", "text", "notFor"]
+    },
+    {
+      "id": "exact-path-placeholder",
+      "identifier": "text/placeholder",
+      "expectedFound": true,
+      "expectedPath": "text/placeholder",
+      "notForMustContain": "secondary",
+      "tags": ["lookup", "exact", "text", "notFor"]
+    },
+    {
+      "id": "exact-path-disabled",
+      "identifier": "text/disabled",
+      "expectedFound": true,
+      "expectedPath": "text/disabled",
+      "notForMustContain": "secondary",
+      "tags": ["lookup", "exact", "text", "notFor"]
+    },
+    {
+      "id": "exact-path-error",
+      "identifier": "text/error",
+      "expectedFound": true,
+      "expectedPath": "text/error",
+      "notForMustContain": "danger",
+      "tags": ["lookup", "exact", "text", "notFor"]
+    },
+    {
+      "id": "exact-path-danger",
+      "identifier": "text/danger",
+      "expectedFound": true,
+      "expectedPath": "text/danger",
+      "notForMustContain": "error",
+      "tags": ["lookup", "exact", "text", "notFor"]
+    },
+    {
+      "id": "exact-path-link",
+      "identifier": "text/link",
+      "expectedFound": true,
+      "expectedPath": "text/link",
+      "notForMustContain": "non-interactive",
+      "tags": ["lookup", "exact", "text", "notFor"]
+    },
+    {
+      "id": "exact-path-brand",
+      "identifier": "text/brand",
+      "expectedFound": true,
+      "expectedPath": "text/brand",
+      "notForMustContain": "body",
+      "tags": ["lookup", "exact", "text", "notFor"]
+    },
+    {
+      "id": "exact-path-bg-primary",
+      "identifier": "background/primary",
+      "expectedFound": true,
+      "expectedPath": "background/primary",
+      "notForMustContain": "elevated",
+      "tags": ["lookup", "exact", "background", "notFor"]
+    },
+    {
+      "id": "exact-path-bg-secondary",
+      "identifier": "background/secondary",
+      "expectedFound": true,
+      "expectedPath": "background/secondary",
+      "notForMustContain": "primary",
+      "tags": ["lookup", "exact", "background", "notFor"]
+    },
+    {
+      "id": "format-css-var-suffix",
+      "identifier": "color-text-secondary",
+      "expectedFound": true,
+      "expectedPath": "text/secondary",
+      "tags": ["lookup", "format", "css-var"]
+    },
+    {
+      "id": "format-css-var-full-light",
+      "identifier": "--color-light-text-disabled",
+      "expectedFound": true,
+      "expectedPath": "text/disabled",
+      "tags": ["lookup", "format", "css-var"]
+    },
+    {
+      "id": "format-css-var-full-dark",
+      "identifier": "--color-dark-text-placeholder",
+      "expectedFound": true,
+      "expectedPath": "text/placeholder",
+      "tags": ["lookup", "format", "css-var"]
+    },
+    {
+      "id": "format-record-id",
+      "identifier": "color.text.placeholder",
+      "expectedFound": true,
+      "expectedPath": "text/placeholder",
+      "tags": ["lookup", "format", "record-id"]
+    },
+    {
+      "id": "format-record-id-background",
+      "identifier": "color.background.elevated",
+      "expectedFound": true,
+      "expectedPath": "background/elevated",
+      "tags": ["lookup", "format", "record-id"]
+    },
+    {
+      "id": "ambiguous-secondary",
+      "identifier": "secondary",
+      "expectedFound": false,
+      "expectedSuggestion": "text/secondary",
+      "tags": ["ambiguous"]
+    },
+    {
+      "id": "fuzzy-resolves-error-text",
+      "identifier": "error text color",
+      "expectedFound": true,
+      "expectedPath": "text/error",
+      "tags": ["lookup", "fuzzy"],
+      "_note": "NL-ish query — text/error ranks #1 with ratio ~1.45, above the 1.4 auto-resolve threshold."
+    },
+    {
+      "id": "fuzzy-resolves-link",
+      "identifier": "link color",
+      "expectedFound": true,
+      "expectedPath": "text/link",
+      "tags": ["lookup", "fuzzy"],
+      "_note": "Tests fuzzy resolution for a designer asking about link coloring without using the exact path."
+    },
+    {
+      "id": "not-found-gibberish",
+      "identifier": "foo-bar-nonexistent-xyz",
+      "expectedFound": false,
+      "tags": ["not-found"]
+    }
+  ]
+}

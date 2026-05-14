@@ -1,0 +1,389 @@
+:root {
+  --border-radius-100: 4px;
+  --border-radius-150: 6px;
+  --border-radius-200: 8px;
+  --border-radius-300: 12px;
+  --border-radius-400: 16px;
+  --border-radius-500: 20px;
+  --border-radius-600: 24px;
+  --border-radius-000: 0;
+  --border-radius-050: 2px;
+  --border-radius-round: 99999px;
+  --border-width-000: 0;
+  --border-width-025: 1px;
+  --border-width-050: 2px;
+  --border-width-075: 3px;
+  --color-neutral-100: #f9fbfa;
+  --color-neutral-200: #e8edeb;
+  --color-neutral-300: #c1c7c6;
+  --color-neutral-400: #889397;
+  --color-neutral-500: #5c6c75;
+  --color-neutral-600: #3d4f58;
+  --color-neutral-700: #1c2d38;
+  --color-neutral-800: #112733;
+  --color-neutral-900: #001e2b;
+  --color-neutral-000: #ffffff; /** White */
+  --color-neutral-900-opacity-8: rgba(0, 30, 43, 0.08);
+  --color-neutral-900-opacity-12: rgba(0, 30, 43, 0.12);
+  --color-neutral-000-opacity-8: rgba(255, 255, 255, 0.08); /** White */
+  --color-neutral-000-opacity-12: rgba(255, 255, 255, 0.12); /** White */
+  --color-neutral-900-opacity-16: rgba(0, 30, 43, 0.16);
+  --color-neutral-000-opacity-16: rgba(255, 255, 255, 0.16); /** White */
+  --color-neutral-900-opacity-20: rgba(0, 30, 43, 0.2);
+  --color-neutral-000-opacity-20: rgba(255, 255, 255, 0.2); /** White */
+  --color-neutral-900-opacity-4: rgba(0, 30, 43, 0.04);
+  --color-neutral-000-opacity-4: rgba(255, 255, 255, 0.04); /** White */
+  --color-neutral-000-opacity-0: rgba(255, 255, 255, 0); /** White */
+  --color-neutral-900-opacity-0: rgba(0, 30, 43, 0);
+  --color-neutral-500-opacity-32: rgba(92, 108, 117, 0.32);
+  --color-neutral-900-opacity-44: rgba(0, 30, 43, 0.44);
+  --color-neutral-900-opacity-32: rgba(0, 30, 43, 0.32);
+  --color-neutral-900-opacity-28: rgba(0, 30, 43, 0.28);
+  --color-neutral-900-opacity-48: rgba(0, 30, 43, 0.48);
+  --color-neutral-500-opacity-28: rgba(92, 108, 117, 0.28);
+  --color-neutral-600-opacity-8: rgba(61, 79, 88, 0.08);
+  --color-neutral-600-opacity-12: rgba(61, 79, 88, 0.12);
+  --color-purple-100: #f9ebff;
+  --color-purple-200: #f1d4fd;
+  --color-purple-400: #b45af2;
+  --color-purple-600: #5e0c9e;
+  --color-purple-700: #2d0b59;
+  --color-yellow-100: #fef7db;
+  --color-yellow-200: #ffec9e;
+  --color-yellow-400: #ffc010;
+  --color-yellow-600: #944f01;
+  --color-yellow-700: #4c2100;
+  --color-red-100: #ffeae5;
+  --color-red-200: #ffcdc7;
+  --color-red-300: #ff6960;
+  --color-red-400: #db3030;
+  --color-red-600: #970606;
+  --color-red-700: #5b0000;
+  --color-red-600-opacity-8: rgba(151, 6, 6, 0.08);
+  --color-red-600-opacity-12: rgba(151, 6, 6, 0.12);
+  --color-red-600-opacity-16: rgba(151, 6, 6, 0.16);
+  --color-red-700-opacity-8: rgba(91, 0, 0, 0.08);
+  --color-red-700-opacity-12: rgba(91, 0, 0, 0.12);
+  --color-red-700-opacity-16: rgba(91, 0, 0, 0.16);
+  --color-red-700-opacity-20: rgba(91, 0, 0, 0.2);
+  --color-red-600-opacity-20: rgba(151, 6, 6, 0.2);
+  --color-red-700-opacity-4: rgba(91, 0, 0, 0.04);
+  --color-red-600-opacity-4: rgba(151, 6, 6, 0.04);
+  --color-blue-100: #e1f7ff;
+  --color-blue-200: #c3e7fe;
+  --color-blue-300: #0498ec;
+  --color-blue-400: #016bf8;
+  --color-blue-500: #1254b7;
+  --color-blue-600: #083c90;
+  --color-blue-700: #0c2657;
+  --color-blue-400-opacity-4: rgba(1, 107, 248, 0.04);
+  --color-blue-400-opacity-8: rgba(1, 107, 248, 0.08);
+  --color-blue-400-opacity-16: rgba(1, 107, 248, 0.16);
+  --color-blue-400-opacity-12: rgba(1, 107, 248, 0.12);
+  --color-blue-700-opacity-8: rgba(12, 38, 87, 0.08);
+  --color-blue-700-opacity-12: rgba(12, 38, 87, 0.12);
+  --color-blue-100-opacity-8: rgba(225, 247, 255, 0.08);
+  --color-blue-100-opacity-12: rgba(225, 247, 255, 0.12);
+  --color-blue-400-opacity-48: rgba(1, 107, 248, 0.48);
+  --color-blue-200-opacity-64: rgba(195, 231, 254, 0.64);
+  --color-blue-200-opacity-16: rgba(195, 231, 254, 0.16);
+  --color-green-100: #e3fcf7;
+  --color-green-200: #c0fae6;
+  --color-green-300: #71f6ba;
+  --color-green-400: #00ed64;
+  --color-green-500: #00a35c;
+  --color-green-600: #00684a;
+  --color-green-700: #023430;
+  --color-green-600-opacity-8: rgba(0, 104, 74, 0.08);
+  --color-green-600-opacity-12: rgba(0, 104, 74, 0.12);
+  --color-green-600-opacity-16: rgba(0, 104, 74, 0.16);
+  --color-green-700-opacity-8: rgba(2, 52, 48, 0.08);
+  --color-green-700-opacity-12: rgba(2, 52, 48, 0.12);
+  --color-green-700-opacity-16: rgba(2, 52, 48, 0.16);
+  --color-green-700-opacity-20: rgba(2, 52, 48, 0.2);
+  --color-green-600-opacity-20: rgba(0, 104, 74, 0.2);
+  --color-green-700-opacity-4: rgba(2, 52, 48, 0.04);
+  --color-green-600-opacity-4: rgba(0, 104, 74, 0.04);
+  --duration-faster: 100ms;
+  --duration-default: 150ms;
+  --duration-slower: 300ms;
+  --duration-slowest: 500ms;
+  --font-family-body: 'Euclid Circular A', Lexend, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-serif: 'MongoDB Value Serif', 'Times New Roman', serif;
+  --font-family-monospace: 'Source Code Pro', Menlo, Courier;
+  --font-size-small: 11px;
+  --font-size-medium: 13px;
+  --font-size-large: 16px;
+  --height-medium: 32px; /** Height for the medium variant */
+  --height-small: 24px; /** Height for the small variant */
+  --height-large: 40px; /** Height for the large variant */
+  --space-100: 4px;
+  --space-150: 6px;
+  --space-200: 8px;
+  --space-300: 12px;
+  --space-400: 16px;
+  --space-600: 24px;
+  --space-800: 32px;
+  --space-900: 36px;
+  --space-1000: 40px;
+  --space-1200: 48px;
+  --space-1400: 56px;
+  --space-1600: 64px;
+  --space-1800: 72px;
+  --space-000: 0;
+  --space-025: 1px;
+  --space-050: 2px;
+  --border-radius-micro: var(--border-radius-050); /** Small border radius. */
+  --border-radius-control: var(--border-radius-100); /** Medium border radius. */
+  --border-radius-surface: var(--border-radius-200); /** Large border radius. */
+  --border-width-default: var(--border-width-025); /** Default border width for interactive components */
+  --border-width-focus: var(--border-width-050); /** Focus indicator border width */
+  --color-light-background-primary: var(--color-neutral-000); /* Use for the main app surface or page-level background; this should be the default surface for most UI. */
+  --color-light-background-secondary: var(--color-neutral-100); /* Use for nested surfaces or secondary areas that need less emphasis than the main app background; do not use as the dominant page background. */
+  --color-light-background-disabled: var(--color-neutral-200); /* Use for disabled component backgrounds where the UI is unavailable and all interaction is halted; pair with disabled text, icon, and border tokens. */
+  --color-light-background-info: var(--color-blue-100); /* Use for informational states and neutral guidance. Pair with matching text, icon, and border tokens when the state needs supporting content. */
+  --color-light-background-warning: var(--color-yellow-100); /* Use for warning states, degraded conditions, or attention-needed information. Pair with matching text, icon, and border tokens when the state needs supporting content. */
+  --color-light-background-error: var(--color-red-100); /* Use for error states, failed validation, or blocking problems. Pair with matching text, icon, and border tokens when the state needs supporting content. */
+  --color-light-background-inverse-primary: var(--color-neutral-900); /* Use for primary inverse backgrounds in dark-on-light or light-on-dark contexts; pair with inverse text and icon tokens to maintain contrast. */
+  --color-light-background-current-secondary: var(--color-green-100); /* Use for a lower-emphasis background on the current item, page, step, or location; this state is similar to aria-current and should indicate where the user is now. */
+  --color-light-background-brand-enabled: var(--color-green-600); /* Use for the enabled background of primary brand buttons; pair with on-brand text and icon tokens. */
+  --color-light-background-selected-primary: var(--color-blue-400); /* Use for the primary background of selected items, options, rows, or navigation states; indicates a user-selected state. */
+  --color-light-background-selected-secondary: var(--color-blue-100); /* Use for a lower-emphasis background of selected items, options, rows, or navigation states; indicates a user-selected state. */
+  --color-light-background-danger-enabled: var(--color-red-400); /* Use for the enabled background of danger buttons; pair with on-danger text and icon tokens. */
+  --color-light-background-accent-green: var(--color-green-100); /* Use to visually distinguish green categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-background-accent-neutral-2: var(--color-neutral-200); /* Use to visually distinguish neutral 2 categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-background-elevated: var(--color-neutral-000); /* Use for elevated surfaces such as cards, popovers, menus, and overlays. Pair with matching text, icon, and border tokens when the state needs supporting content. */
+  --color-light-background-accent-blue: var(--color-blue-100); /* Use to visually distinguish blue categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-background-accent-red: var(--color-red-100); /* Use to visually distinguish red categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-background-accent-yellow: var(--color-yellow-100); /* Use to visually distinguish yellow categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-background-accent-purple: var(--color-purple-100); /* Use to visually distinguish purple categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-background-accent-neutral-1: var(--color-neutral-000); /* Use to visually distinguish neutral 1 categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-background-ai-gradient-start: var(--color-green-500); /* Use for AI-themed gradient backgrounds; pair start and end tokens together for the intended gradient treatment. */
+  --color-light-background-ai-gradient-end: var(--color-blue-400); /* Use for AI-themed gradient backgrounds; pair start and end tokens together for the intended gradient treatment. */
+  --color-light-background-inverse-secondary: var(--color-neutral-500); /* Use for secondary inverse backgrounds in dark-on-light or light-on-dark contexts; pair with inverse text and icon tokens to maintain contrast. */
+  --color-light-background-current-primary: var(--color-green-500); /* Use for the primary background of the current item, page, step, or location; this state is similar to aria-current and should indicate where the user is now. */
+  --color-light-border-primary: var(--color-neutral-400); /* Use for the primary UI role in a section or component. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-light-border-secondary: var(--color-neutral-300); /* Use for supporting UI that needs less emphasis than primary content. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-light-border-tertiary: var(--color-neutral-200); /* Use for low-emphasis UI separation or structure. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-light-border-disabled: var(--color-neutral-300); /* Use for disabled borders where the outlined UI is unavailable and all interaction is halted; pair with disabled background, text, or icon tokens. */
+  --color-light-border-info: var(--color-blue-400); /* Use for informational states and neutral guidance. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-light-border-oninfo: var(--color-blue-200);
+  --color-light-border-warning: var(--color-yellow-400); /* Use for warning states, degraded conditions, or attention-needed information. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-light-border-onwarning: var(--color-yellow-200);
+  --color-light-border-success: var(--color-green-500); /* Use for success states, completed actions, or positive confirmation. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-light-border-onsuccess: var(--color-green-200);
+  --color-light-border-error: var(--color-red-400); /* Use for error states, failed validation, or blocking problems. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-light-border-onerror: var(--color-red-200);
+  --color-light-border-focus: var(--color-blue-500); /* Use only for keyboard focus indicators that appear when focus is triggered by keyboard or focus state; do not use for general UI borders or decorative outlines. */
+  --color-light-border-current: var(--color-green-600); /* Use for borders that mark the current item, page, step, or location; this state is similar to aria-current and should indicate where the user is now. */
+  --color-light-border-brand: var(--color-green-600); /* Use for MongoDB brand moments or primary brand actions. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-light-border-selected: var(--color-blue-400); /* Use for selected items, active choices, or selected navigation states. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-light-border-danger: var(--color-red-400); /* Use for destructive actions or high-risk user choices. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-light-border-accent-green: var(--color-green-200); /* Use for green category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-border-accent-neutral-2: var(--color-neutral-400); /* Use for neutral 2 category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-border-accent-purple: var(--color-purple-400); /* Use for purple category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-border-accent-neutral-1: var(--color-neutral-200); /* Use for neutral 1 category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-border-accent-blue: var(--color-blue-200); /* Use for blue category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-border-accent-red: var(--color-red-200); /* Use for red category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-border-accent-yellow: var(--color-yellow-200); /* Use for yellow category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-border-accent-neutral-3: var(--color-neutral-300); /* Use for neutral 3 category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-text-primary: var(--color-neutral-900); /* Use for primary text and the main body of page or section content; pair with secondary text only when additional hierarchy is needed. */
+  --color-light-text-secondary: var(--color-neutral-600); /* Use for supporting text that needs less emphasis than primary text; do not use as the dominant text color for main content or pages. */
+  --color-light-text-placeholder: var(--color-neutral-500); /* Use for placeholder content before user input is provided. Pair with the matching background token when text appears inside a semantic state container. */
+  --color-light-text-disabled: var(--color-neutral-300); /* Use for disabled text where content belongs to unavailable UI and all interaction is halted; pair with disabled background, icon, and border tokens. */
+  --color-light-text-info: var(--color-blue-500); /* Use for informational states and neutral guidance. Pair with the matching background token when text appears inside a semantic state container. */
+  --color-light-text-oninfo: var(--color-blue-600);
+  --color-light-text-warning: var(--color-yellow-600); /* Use for warning states, degraded conditions, or attention-needed information. Pair with the matching background token when text appears inside a semantic state container. */
+  --color-light-text-onwarning: var(--color-yellow-600);
+  --color-light-text-success: var(--color-green-600); /* Use for success states, completed actions, or positive confirmation. Pair with the matching background token when text appears inside a semantic state container. */
+  --color-light-text-onsuccess: var(--color-green-600);
+  --color-light-text-error: var(--color-red-400); /* Use for text that communicates the result of a failed user action — form validation errors, incorrect passwords, submission failures, or any inline feedback where the user made a mistake and needs to correct it. This is reactive: something already went wrong. Do not use for warning users about what might happen. text/error and text/danger share the same hex value intentionally — they are rarely used together, and even when they are, users do not need to distinguish them by color. The separation is semantic, for the author: choosing the right token makes the intent clear in code and in Figma. */
+  --color-light-text-onerror: var(--color-red-600);
+  --color-light-text-inverse-primary: var(--color-neutral-000); /* Use for primary text in inverse color contexts, such as dark-on-light or light-on-dark surfaces; pair with inverse background tokens. */
+  --color-light-text-inverse-secondary: var(--color-neutral-300); /* Use for secondary text in inverse color contexts, such as dark-on-light or light-on-dark surfaces; pair with inverse background tokens. */
+  --color-light-text-link: var(--color-blue-400); /* Use for hyperlinked text, link icons, and link underlines; do not use for non-interactive blue text. */
+  --color-light-text-brand: var(--color-green-600); /* Use sparingly to emphasize brand-related text, including Heading 1 and Heading 2; do not use for interactive text, main content, or paragraphs. */
+  --color-light-text-current: var(--color-green-600); /* Use for text that marks the current item, page, step, or location; this state is similar to aria-current and should indicate where the user is now. */
+  --color-light-text-onbrand: var(--color-neutral-000);
+  --color-light-text-ondanger: var(--color-neutral-000);
+  --color-light-text-danger: var(--color-red-400); /* Use for text that signals a destructive or irreversible action — deleting a project, removing a user, permanently destroying data. This is proactive: you are warning the user before they act. Do not use for validation feedback or error messages after something went wrong; use text/error for those. text/danger and text/error share the same hex value intentionally — both deliver urgency and demand attention visually. They are rarely used together, and even when they are, users do not need to distinguish them by color. The separation is semantic, for the author: choosing the right token makes the intent clear in code and in Figma. */
+  --color-light-text-read-only: var(--color-neutral-600);
+  --color-light-text-accent-green: var(--color-green-700); /* Use for green category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-text-accent-neutral-1: var(--color-neutral-700); /* Use for neutral 1 category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-text-accent-blue: var(--color-blue-700); /* Use for blue category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-text-accent-red: var(--color-red-600); /* Use for red category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-text-accent-yellow: var(--color-yellow-600); /* Use for yellow category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-text-accent-purple: var(--color-purple-600); /* Use for purple category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-text-accent-neutral-2: var(--color-neutral-600); /* Use for neutral 2 category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-icon-primary: var(--color-neutral-900); /* Use for primary icons with the highest default emphasis in a section or component; align with primary text usage. */
+  --color-light-icon-secondary: var(--color-neutral-500); /* Use for secondary or supporting icons that need less emphasis than primary icons; align with secondary text usage. */
+  --color-light-icon-inverse-primary: var(--color-neutral-000); /* Use for primary icons in inverse color contexts, such as dark-on-light or light-on-dark surfaces; align with inverse primary text usage. */
+  --color-light-icon-info: var(--color-blue-400); /* Use for icons that communicate informational states or neutral guidance; align with info text usage. */
+  --color-light-icon-warning: var(--color-yellow-600); /* Use for icons that communicate warning states, degraded conditions, or attention-needed information; align with warning text usage. */
+  --color-light-icon-success: var(--color-green-500); /* Use for icons that communicate success states, completed actions, or positive confirmation; align with success text usage. */
+  --color-light-icon-error: var(--color-red-400); /* Use for icons that communicate error states, failed validation, or blocking problems; align with error text usage. */
+  --color-light-icon-disabled: var(--color-neutral-300); /* Use for icons in disabled UI where the component is unavailable and all interaction is halted; align with disabled text usage. */
+  --color-light-icon-brand: var(--color-green-600); /* Use sparingly for brand-related icons when MongoDB brand identity is part of the message; do not use for success, category meaning, or generic interactive icons. */
+  --color-light-icon-onbrand: var(--color-green-100);
+  --color-light-icon-ondanger: var(--color-red-100);
+  --color-light-icon-danger: var(--color-red-400); /* Use for icons that communicate destructive actions or high-risk choices; align with danger text usage. */
+  --color-light-icon-accent-green: var(--color-green-700); /* Use for green category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-icon-accent-neutral: var(--color-neutral-700); /* Use for neutral category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-icon-accent-blue: var(--color-blue-700); /* Use for blue category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-icon-accent-red: var(--color-red-600); /* Use for red category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-icon-accent-yellow: var(--color-yellow-600); /* Use for yellow category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-icon-accent-purple: var(--color-purple-600); /* Use for purple category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-light-icon-selected: var(--color-blue-400); /* Use for icons that mark selected items, active choices, or selected navigation states; align with selected text usage. */
+  --color-light-layer-onfilled-neutral-hovered: var(--color-neutral-600-opacity-8);
+  --color-light-layer-onfilled-neutral-pressed: var(--color-neutral-600-opacity-12);
+  --color-light-layer-onsurface-brand-hovered: var(--color-green-600-opacity-8);
+  --color-light-layer-onsurface-brand-pressed: var(--color-green-600-opacity-12);
+  --color-light-layer-onsurface-danger-hovered: var(--color-red-600-opacity-8);
+  --color-light-layer-onsurface-danger-pressed: var(--color-red-600-opacity-12);
+  --color-light-layer-enabled: var(--color-neutral-000-opacity-0); /** State layer for outline components. */
+  --color-light-layer-onfilled-danger-hovered: var(--color-neutral-900-opacity-8);
+  --color-light-layer-onfilled-danger-pressed: var(--color-neutral-900-opacity-12);
+  --color-light-layer-onfilled-brand-hovered: var(--color-neutral-900-opacity-12);
+  --color-light-layer-onfilled-brand-pressed: var(--color-neutral-900-opacity-16);
+  --color-light-layer-onsurface-neutral-hovered: var(--color-neutral-600-opacity-8);
+  --color-light-layer-onsurface-neutral-pressed: var(--color-neutral-600-opacity-12);
+  --color-light-layer-onselected-hovered: var(--color-neutral-900-opacity-8);
+  --color-light-layer-onselected-pressed: var(--color-neutral-900-opacity-12);
+  --color-dark-background-primary: var(--color-neutral-900); /* Use for the main app surface or page-level background; this should be the default surface for most UI. */
+  --color-dark-background-secondary: var(--color-neutral-800); /* Use for nested surfaces or secondary areas that need less emphasis than the main app background; do not use as the dominant page background. */
+  --color-dark-background-disabled: var(--color-neutral-700); /* Use for disabled component backgrounds where the UI is unavailable and all interaction is halted; pair with disabled text, icon, and border tokens. */
+  --color-dark-background-info: var(--color-blue-700); /* Use for informational states and neutral guidance. Pair with matching text, icon, and border tokens when the state needs supporting content. */
+  --color-dark-background-warning: var(--color-yellow-700); /* Use for warning states, degraded conditions, or attention-needed information. Pair with matching text, icon, and border tokens when the state needs supporting content. */
+  --color-dark-background-error: var(--color-red-700); /* Use for error states, failed validation, or blocking problems. Pair with matching text, icon, and border tokens when the state needs supporting content. */
+  --color-dark-background-inverse-primary: var(--color-neutral-200); /* Use for primary inverse backgrounds in dark-on-light or light-on-dark contexts; pair with inverse text and icon tokens to maintain contrast. */
+  --color-dark-background-current-secondary: var(--color-green-700); /* Use for a lower-emphasis background on the current item, page, step, or location; this state is similar to aria-current and should indicate where the user is now. */
+  --color-dark-background-brand-enabled: var(--color-green-600); /* Use for the enabled background of primary brand buttons; pair with on-brand text and icon tokens. */
+  --color-dark-background-selected-primary: var(--color-blue-300); /* Use for the primary background of selected items, options, rows, or navigation states; indicates a user-selected state. */
+  --color-dark-background-selected-secondary: var(--color-blue-700); /* Use for a lower-emphasis background of selected items, options, rows, or navigation states; indicates a user-selected state. */
+  --color-dark-background-danger-enabled: var(--color-red-400); /* Use for the enabled background of danger buttons; pair with on-danger text and icon tokens. */
+  --color-dark-background-accent-green: var(--color-green-700); /* Use to visually distinguish green categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-background-accent-neutral-2: var(--color-neutral-500); /* Use to visually distinguish neutral 2 categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-background-elevated: var(--color-neutral-700); /* Use for elevated surfaces such as cards, popovers, menus, and overlays. Pair with matching text, icon, and border tokens when the state needs supporting content. */
+  --color-dark-background-accent-blue: var(--color-blue-700); /* Use to visually distinguish blue categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-background-accent-red: var(--color-red-700); /* Use to visually distinguish red categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-background-accent-yellow: var(--color-yellow-700); /* Use to visually distinguish yellow categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-background-accent-purple: var(--color-purple-700); /* Use to visually distinguish purple categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-background-accent-neutral-1: var(--color-neutral-700); /* Use to visually distinguish neutral 1 categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-background-ai-gradient-start: var(--color-green-400); /* Use for AI-themed gradient backgrounds; pair start and end tokens together for the intended gradient treatment. */
+  --color-dark-background-ai-gradient-end: var(--color-blue-300); /* Use for AI-themed gradient backgrounds; pair start and end tokens together for the intended gradient treatment. */
+  --color-dark-background-inverse-secondary: var(--color-neutral-300); /* Use for secondary inverse backgrounds in dark-on-light or light-on-dark contexts; pair with inverse text and icon tokens to maintain contrast. */
+  --color-dark-background-current-primary: var(--color-green-400); /* Use for the primary background of the current item, page, step, or location; this state is similar to aria-current and should indicate where the user is now. */
+  --color-dark-border-primary: var(--color-neutral-400); /* Use for the primary UI role in a section or component. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-dark-border-secondary: var(--color-neutral-500); /* Use for supporting UI that needs less emphasis than primary content. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-dark-border-tertiary: var(--color-neutral-600); /* Use for low-emphasis UI separation or structure. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-dark-border-disabled: var(--color-neutral-600); /* Use for disabled borders where the outlined UI is unavailable and all interaction is halted; pair with disabled background, text, or icon tokens. */
+  --color-dark-border-info: var(--color-blue-300); /* Use for informational states and neutral guidance. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-dark-border-oninfo: var(--color-blue-600);
+  --color-dark-border-warning: var(--color-yellow-600); /* Use for warning states, degraded conditions, or attention-needed information. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-dark-border-onwarning: var(--color-yellow-600);
+  --color-dark-border-success: var(--color-green-500); /* Use for success states, completed actions, or positive confirmation. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-dark-border-onsuccess: var(--color-green-600);
+  --color-dark-border-error: var(--color-red-300); /* Use for error states, failed validation, or blocking problems. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-dark-border-onerror: var(--color-red-600);
+  --color-dark-border-focus: var(--color-blue-300); /* Use only for keyboard focus indicators that appear when focus is triggered by keyboard or focus state; do not use for general UI borders or decorative outlines. */
+  --color-dark-border-current: var(--color-green-400); /* Use for borders that mark the current item, page, step, or location; this state is similar to aria-current and should indicate where the user is now. */
+  --color-dark-border-brand: var(--color-green-400); /* Use for MongoDB brand moments or primary brand actions. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-dark-border-selected: var(--color-blue-300); /* Use for selected items, active choices, or selected navigation states. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-dark-border-danger: var(--color-red-300); /* Use for destructive actions or high-risk user choices. Pair with matching background, text, or icon tokens when the state needs a visible outline. */
+  --color-dark-border-accent-green: var(--color-green-600); /* Use for green category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-border-accent-neutral-2: var(--color-neutral-300); /* Use for neutral 2 category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-border-accent-purple: var(--color-purple-400); /* Use for purple category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-border-accent-neutral-1: var(--color-neutral-400); /* Use for neutral 1 category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-border-accent-blue: var(--color-blue-600); /* Use for blue category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-border-accent-red: var(--color-red-600); /* Use for red category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-border-accent-yellow: var(--color-yellow-600); /* Use for yellow category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-border-accent-neutral-3: var(--color-neutral-500); /* Use for neutral 3 category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-text-primary: var(--color-neutral-100); /* Use for primary text and the main body of page or section content; pair with secondary text only when additional hierarchy is needed. */
+  --color-dark-text-secondary: var(--color-neutral-300); /* Use for supporting text that needs less emphasis than primary text; do not use as the dominant text color for main content or pages. */
+  --color-dark-text-placeholder: var(--color-neutral-400); /* Use for placeholder content before user input is provided. Pair with the matching background token when text appears inside a semantic state container. */
+  --color-dark-text-disabled: var(--color-neutral-600); /* Use for disabled text where content belongs to unavailable UI and all interaction is halted; pair with disabled background, icon, and border tokens. */
+  --color-dark-text-info: var(--color-blue-200); /* Use for informational states and neutral guidance. Pair with the matching background token when text appears inside a semantic state container. */
+  --color-dark-text-oninfo: var(--color-blue-200);
+  --color-dark-text-warning: var(--color-yellow-400); /* Use for warning states, degraded conditions, or attention-needed information. Pair with the matching background token when text appears inside a semantic state container. */
+  --color-dark-text-onwarning: var(--color-yellow-200);
+  --color-dark-text-success: var(--color-green-200); /* Use for success states, completed actions, or positive confirmation. Pair with the matching background token when text appears inside a semantic state container. */
+  --color-dark-text-onsuccess: var(--color-green-300);
+  --color-dark-text-error: var(--color-red-300); /* Use for text that communicates the result of a failed user action — form validation errors, incorrect passwords, submission failures, or any inline feedback where the user made a mistake and needs to correct it. This is reactive: something already went wrong. Do not use for warning users about what might happen. text/error and text/danger share the same hex value intentionally — they are rarely used together, and even when they are, users do not need to distinguish them by color. The separation is semantic, for the author: choosing the right token makes the intent clear in code and in Figma. */
+  --color-dark-text-onerror: var(--color-red-200);
+  --color-dark-text-inverse-primary: var(--color-neutral-900); /* Use for primary text in inverse color contexts, such as dark-on-light or light-on-dark surfaces; pair with inverse background tokens. */
+  --color-dark-text-inverse-secondary: var(--color-neutral-600); /* Use for secondary text in inverse color contexts, such as dark-on-light or light-on-dark surfaces; pair with inverse background tokens. */
+  --color-dark-text-link: var(--color-blue-300); /* Use for hyperlinked text, link icons, and link underlines; do not use for non-interactive blue text. */
+  --color-dark-text-brand: var(--color-green-400); /* Use sparingly to emphasize brand-related text, including Heading 1 and Heading 2; do not use for interactive text, main content, or paragraphs. */
+  --color-dark-text-current: var(--color-neutral-000); /* Use for text that marks the current item, page, step, or location; this state is similar to aria-current and should indicate where the user is now. */
+  --color-dark-text-onbrand: var(--color-neutral-000);
+  --color-dark-text-ondanger: var(--color-neutral-000);
+  --color-dark-text-danger: var(--color-red-300); /* Use for text that signals a destructive or irreversible action — deleting a project, removing a user, permanently destroying data. This is proactive: you are warning the user before they act. Do not use for validation feedback or error messages after something went wrong; use text/error for those. text/danger and text/error share the same hex value intentionally — both deliver urgency and demand attention visually. They are rarely used together, and even when they are, users do not need to distinguish them by color. The separation is semantic, for the author: choosing the right token makes the intent clear in code and in Figma. */
+  --color-dark-text-read-only: var(--color-neutral-400);
+  --color-dark-text-accent-green: var(--color-green-100); /* Use for green category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-text-accent-neutral-1: var(--color-neutral-200); /* Use for neutral 1 category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-text-accent-blue: var(--color-blue-200); /* Use for blue category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-text-accent-red: var(--color-red-200); /* Use for red category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-text-accent-yellow: var(--color-yellow-200); /* Use for yellow category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-text-accent-purple: var(--color-purple-200); /* Use for purple category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-text-accent-neutral-2: var(--color-neutral-200); /* Use for neutral 2 category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-icon-primary: var(--color-neutral-200); /* Use for primary icons with the highest default emphasis in a section or component; align with primary text usage. */
+  --color-dark-icon-secondary: var(--color-neutral-300); /* Use for secondary or supporting icons that need less emphasis than primary icons; align with secondary text usage. */
+  --color-dark-icon-inverse-primary: var(--color-neutral-900); /* Use for primary icons in inverse color contexts, such as dark-on-light or light-on-dark surfaces; align with inverse primary text usage. */
+  --color-dark-icon-info: var(--color-blue-300); /* Use for icons that communicate informational states or neutral guidance; align with info text usage. */
+  --color-dark-icon-warning: var(--color-yellow-400); /* Use for icons that communicate warning states, degraded conditions, or attention-needed information; align with warning text usage. */
+  --color-dark-icon-success: var(--color-green-400); /* Use for icons that communicate success states, completed actions, or positive confirmation; align with success text usage. */
+  --color-dark-icon-error: var(--color-red-300); /* Use for icons that communicate error states, failed validation, or blocking problems; align with error text usage. */
+  --color-dark-icon-disabled: var(--color-neutral-600); /* Use for icons in disabled UI where the component is unavailable and all interaction is halted; align with disabled text usage. */
+  --color-dark-icon-brand: var(--color-green-400); /* Use sparingly for brand-related icons when MongoDB brand identity is part of the message; do not use for success, category meaning, or generic interactive icons. */
+  --color-dark-icon-onbrand: var(--color-green-100);
+  --color-dark-icon-ondanger: var(--color-red-100);
+  --color-dark-icon-danger: var(--color-red-300); /* Use for icons that communicate destructive actions or high-risk choices; align with danger text usage. */
+  --color-dark-icon-accent-green: var(--color-green-100); /* Use for green category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-icon-accent-neutral: var(--color-neutral-200); /* Use for neutral category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-icon-accent-blue: var(--color-blue-200); /* Use for blue category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-icon-accent-red: var(--color-red-200); /* Use for red category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-icon-accent-yellow: var(--color-yellow-200); /* Use for yellow category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-icon-accent-purple: var(--color-purple-200); /* Use for purple category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback. */
+  --color-dark-icon-selected: var(--color-blue-400); /* Use for icons that mark selected items, active choices, or selected navigation states; align with selected text usage. */
+  --color-dark-layer-onfilled-neutral-hovered: var(--color-neutral-000-opacity-8);
+  --color-dark-layer-onfilled-neutral-pressed: var(--color-neutral-000-opacity-12);
+  --color-dark-layer-onsurface-brand-hovered: var(--color-green-600-opacity-16);
+  --color-dark-layer-onsurface-brand-pressed: var(--color-green-600-opacity-20);
+  --color-dark-layer-onsurface-danger-hovered: var(--color-red-600-opacity-16);
+  --color-dark-layer-onsurface-danger-pressed: var(--color-red-600-opacity-20);
+  --color-dark-layer-enabled: var(--color-neutral-000-opacity-0); /** State layer for outline components. */
+  --color-dark-layer-onfilled-danger-hovered: var(--color-neutral-900-opacity-8);
+  --color-dark-layer-onfilled-danger-pressed: var(--color-neutral-900-opacity-12);
+  --color-dark-layer-onfilled-brand-hovered: var(--color-neutral-900-opacity-12);
+  --color-dark-layer-onfilled-brand-pressed: var(--color-neutral-900-opacity-16);
+  --color-dark-layer-onsurface-neutral-hovered: var(--color-neutral-000-opacity-8);
+  --color-dark-layer-onsurface-neutral-pressed: var(--color-neutral-000-opacity-12);
+  --color-dark-layer-onselected-hovered: var(--color-neutral-000-opacity-8);
+  --color-dark-layer-onselected-pressed: var(--color-neutral-000-opacity-12);
+  --shadow-light-default: var(--space-000) var(--space-050) var(--space-100) var(--space-025) var(--color-neutral-900-opacity-16);
+  --shadow-dark-default: var(--space-000) var(--space-050) var(--space-100) var(--space-025) var(--color-neutral-000-opacity-0);
+  --space-text-to-element-small: var(--space-100);
+  --space-text-to-element-medium: var(--space-150);
+  --space-text-to-element-large: var(--space-200);
+  --space-edge-to-control-small: var(--space-200);
+  --space-edge-to-control-medium: var(--space-300);
+  --space-label-to-control: var(--space-100);
+  --space-edge-to-control-large: var(--space-400);
+  --space-between-element-h: var(--space-200);
+  --typography-heading-01: 400 48px/64px var(--font-family-serif); /* Use for the highest-level page heading when strong brand-led hierarchy is needed; must be paired with text-brand in Via for now. */
+  --typography-heading-02: 400 32px/40px var(--font-family-serif); /* Use for major section headings below the page title when strong brand-led hierarchy is needed; must be paired with text-brand in Via for now. */
+  --typography-heading-03: 500 24px/32px var(--font-family-body); /* Use for prominent section or panel headings that need clear hierarchy without the brand serif style. */
+  --typography-heading-04: 600 18px/24px var(--font-family-body); /* Use for medium section headings, modal titles, or card headings within product UI. */
+  --typography-heading-05: 600 16px/24px var(--font-family-body); /* Use for compact section headings or subsection titles in dense product UI. */
+  --typography-heading-06: 600 13px/20px var(--font-family-body); /* Use for the smallest heading level when text represents heading hierarchy, such as compact group titles or dense section headings; do not use as a component label. */
+  --typography-body-large: 400 16px/24px var(--font-family-body); /* Use for body copy that needs larger default readability; recommended as the base body font size for Edu experiences. */
+  --typography-body-medium: 400 13px/20px var(--font-family-body); /* Use for default product UI body text, descriptions, and readable supporting content; recommended as the base body font size for non-Edu products. */
+  --typography-label: 500 12px/16px var(--font-family-body);
+  --typography-description: 400 12px/16px var(--font-family-body); /* Use for helper text, supplemental descriptions, and low-emphasis explanatory content near controls or settings; do not use for longer paragraphs. */
+  --typography-disclaimer: 400 11px/16px var(--font-family-body); /* Use for legal, compliance, or fine-print disclaimers that must remain readable but lower emphasis. */
+  --typography-code-large: 400 15px/24px var(--font-family-monospace); /* Use for larger code snippets, command examples, or monospace values that need more visual presence. */
+  --typography-code-medium: 400 13px/20px var(--font-family-monospace); /* Use for default inline code, compact code snippets, command examples, or monospace values. */
+  --typography-button-label-large: 500 16px/24px var(--font-family-body);
+  --typography-button-label-medium: 500 13px/20px var(--font-family-body);
+  --typography-button-label-small: 500 12px/16px var(--font-family-body);
+}

@@ -1,0 +1,30 @@
+{
+  "name": "via-token-advisor",
+  "version": "0.1.0",
+  "description": "MCP server for advising on Via design tokens and typography styles",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "via-token-advisor": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "data/generated"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "generate": "python3 scripts/generate-advisor-data.py",
+    "eval": "tsx scripts/run-eval.ts",
+    "eval:explain": "tsx scripts/run-explain-eval.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.22.0",
+    "typescript": "^5.8.0"
+  }
+}

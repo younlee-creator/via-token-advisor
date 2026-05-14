@@ -1,0 +1,1966 @@
+{
+  "$schema": "https://www.w3.org/community/design-tokens/",
+  "source": {
+    "light": "/Users/youn.lee/Downloads/Skunkwork_2027/Color _ Semantic/Light.tokens.json",
+    "dark": "/Users/youn.lee/Downloads/Skunkwork_2027/Color _ Semantic/Dark.tokens.json"
+  },
+  "notes": [
+    "Draft descriptions for Via Color / Semantic variables.",
+    "Descriptions are keyed by Figma variable ID and semantic token path.",
+    "Review before writing back to Figma. Existing Figma descriptions are preserved with status=existing.",
+    "Removed tokens labeled figma-only from this authored dataset because they should not be exposed to developers.",
+    "Removed tokens labeled -test-sooa from this authored dataset because they are test-only variables.",
+    "Removed tokens labeled -test-spike from this authored dataset because they are test-only variables.",
+    "Removed all remaining test-labeled tokens from this authored dataset because they are not publishable semantic tokens.",
+    "Size and spacing tokens are intentionally scoped out of advisor recommendations for now because they are primarily component-specific."
+  ],
+  "tokens": [
+    {
+      "path": "background/primary",
+      "variableId": "VariableID:54610:24043",
+      "status": "existing",
+      "description": "Use for the main app surface or page-level background; this should be the default surface for most UI.",
+      "notFor": [
+        "Elevated surfaces like cards, popovers, dropdowns, or modals — use background/elevated.",
+        "Nested or secondary panels that need less visual weight than the main surface — use background/secondary."
+      ],
+      "modeValues": {
+        "light": {
+          "value": "#FFFFFF",
+          "alias": "neutral/opaque/000 (White)"
+        },
+        "dark": {
+          "value": "#001E2B",
+          "alias": "neutral/opaque/900 (MDB Black)"
+        }
+      }
+    },
+    {
+      "path": "background/secondary",
+      "variableId": "VariableID:54610:24044",
+      "status": "existing",
+      "description": "Use for nested surfaces or secondary areas that need less emphasis than the main app background; do not use as the dominant page background.",
+      "notFor": [
+        "The main or dominant page background — use background/primary as the default surface.",
+        "Elevated overlays, modals, or floating UI — use background/elevated."
+      ],
+      "modeValues": {
+        "light": {
+          "value": "#F9FBFA",
+          "alias": "neutral/opaque/100  (Gray-Light3)"
+        },
+        "dark": {
+          "value": "#112733",
+          "alias": "neutral/opaque/800 (Gray-Dark4)"
+        }
+      }
+    },
+    {
+      "path": "background/elevated",
+      "variableId": "VariableID:55281:29901",
+      "status": "draft",
+      "description": "Use for elevated surfaces such as cards, popovers, menus, and overlays. Pair with matching text, icon, and border tokens when the state needs supporting content.",
+      "modeValues": {
+        "light": {
+          "value": "#FFFFFF",
+          "alias": "neutral/opaque/000 (White)"
+        },
+        "dark": {
+          "value": "#1C2D38",
+          "alias": "neutral/opaque/700 (Gray-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/disabled",
+      "variableId": "VariableID:54610:24045",
+      "status": "draft",
+      "description": "Use for disabled component backgrounds where the UI is unavailable and all interaction is halted; pair with disabled text, icon, and border tokens.",
+      "modeValues": {
+        "light": {
+          "value": "#E8EDEB",
+          "alias": "neutral/opaque/200  (Gray-Light2)"
+        },
+        "dark": {
+          "value": "#1C2D38",
+          "alias": "neutral/opaque/700 (Gray-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/info",
+      "variableId": "VariableID:54610:24046",
+      "status": "draft",
+      "description": "Use for informational states and neutral guidance. Pair with matching text, icon, and border tokens when the state needs supporting content.",
+      "modeValues": {
+        "light": {
+          "value": "#E1F7FF",
+          "alias": "blue/opaque/100 (Blue-Light3)"
+        },
+        "dark": {
+          "value": "#0C2657",
+          "alias": "blue/opaque/700 (Blue-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/warning",
+      "variableId": "VariableID:54610:24047",
+      "status": "draft",
+      "description": "Use for warning states, degraded conditions, or attention-needed information. Pair with matching text, icon, and border tokens when the state needs supporting content.",
+      "modeValues": {
+        "light": {
+          "value": "#FEF7DB",
+          "alias": "yellow/100 (Yellow-Light3)"
+        },
+        "dark": {
+          "value": "#4C2100",
+          "alias": "yellow/700 (Yellow-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/error",
+      "variableId": "VariableID:54610:24049",
+      "status": "draft",
+      "description": "Use for error states, failed validation, or blocking problems. Pair with matching text, icon, and border tokens when the state needs supporting content.",
+      "modeValues": {
+        "light": {
+          "value": "#FFEAE5",
+          "alias": "red/opaque/100 (Red-Light3)"
+        },
+        "dark": {
+          "value": "#5B0000",
+          "alias": "red/opaque/700 (Red-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/inverse-primary",
+      "variableId": "VariableID:54610:24050",
+      "status": "draft",
+      "description": "Use for primary inverse backgrounds in dark-on-light or light-on-dark contexts; pair with inverse text and icon tokens to maintain contrast.",
+      "modeValues": {
+        "light": {
+          "value": "#001E2B",
+          "alias": "neutral/opaque/900 (MDB Black)"
+        },
+        "dark": {
+          "value": "#E8EDEB",
+          "alias": "neutral/opaque/200  (Gray-Light2)"
+        }
+      }
+    },
+    {
+      "path": "background/inverse-secondary",
+      "variableId": "VariableID:57354:266550",
+      "status": "draft",
+      "description": "Use for secondary inverse backgrounds in dark-on-light or light-on-dark contexts; pair with inverse text and icon tokens to maintain contrast.",
+      "modeValues": {
+        "light": {
+          "value": "#5C6C75",
+          "alias": "neutral/opaque/500  (Gray-Dark1)"
+        },
+        "dark": {
+          "value": "#C1C7C6",
+          "alias": "neutral/opaque/300  (Gray-Light1)"
+        }
+      }
+    },
+    {
+      "path": "background/current-primary",
+      "variableId": "VariableID:58063:18775",
+      "status": "draft",
+      "description": "Use for the primary background of the current item, page, step, or location; this state is similar to aria-current and should indicate where the user is now.",
+      "modeValues": {
+        "light": {
+          "value": "#00A35C",
+          "alias": "green/opaque/500 (Green-Dark1)"
+        },
+        "dark": {
+          "value": "#00ED64",
+          "alias": "green/opaque/400 (Green-Base)"
+        }
+      }
+    },
+    {
+      "path": "background/brand-enabled",
+      "variableId": "VariableID:54618:1466",
+      "status": "draft",
+      "description": "Use for the enabled background of primary brand buttons; pair with on-brand text and icon tokens.",
+      "modeValues": {
+        "light": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        },
+        "dark": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "background/current-secondary",
+      "variableId": "VariableID:54618:1461",
+      "status": "draft",
+      "description": "Use for a lower-emphasis background on the current item, page, step, or location; this state is similar to aria-current and should indicate where the user is now.",
+      "modeValues": {
+        "light": {
+          "value": "#E3FCF7",
+          "alias": "green/opaque/100 (Green-Light3)"
+        },
+        "dark": {
+          "value": "#023430",
+          "alias": "green/opaque/700 (Green-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/danger-enabled",
+      "variableId": "VariableID:54774:1254",
+      "status": "existing",
+      "description": "Use for the enabled background of danger buttons; pair with on-danger text and icon tokens.",
+      "modeValues": {
+        "light": {
+          "value": "#DB3030",
+          "alias": "red/opaque/400 (Red-Base)"
+        },
+        "dark": {
+          "value": "#DB3030",
+          "alias": "red/opaque/400 (Red-Base)"
+        }
+      }
+    },
+    {
+      "path": "background/selected-primary",
+      "variableId": "VariableID:54703:11447",
+      "status": "draft",
+      "description": "Use for the primary background of selected items, options, rows, or navigation states; indicates a user-selected state.",
+      "modeValues": {
+        "light": {
+          "value": "#016BF8",
+          "alias": "blue/opaque/400 (Blue-Base)"
+        },
+        "dark": {
+          "value": "#0498EC",
+          "alias": "blue/opaque/300 (Blue-Light1)"
+        }
+      }
+    },
+    {
+      "path": "background/selected-secondary",
+      "variableId": "VariableID:54704:2797",
+      "status": "draft",
+      "description": "Use for a lower-emphasis background of selected items, options, rows, or navigation states; indicates a user-selected state.",
+      "modeValues": {
+        "light": {
+          "value": "#E1F7FF",
+          "alias": "blue/opaque/100 (Blue-Light3)"
+        },
+        "dark": {
+          "value": "#0C2657",
+          "alias": "blue/opaque/700 (Blue-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/accent-neutral-1",
+      "variableId": "VariableID:55436:5183",
+      "status": "draft",
+      "description": "Use to visually distinguish neutral 1 categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#FFFFFF",
+          "alias": "neutral/opaque/000 (White)"
+        },
+        "dark": {
+          "value": "#1C2D38",
+          "alias": "neutral/opaque/700 (Gray-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/accent-neutral-2",
+      "variableId": "VariableID:55277:4783",
+      "status": "draft",
+      "description": "Use to visually distinguish neutral 2 categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#E8EDEB",
+          "alias": "neutral/opaque/200  (Gray-Light2)"
+        },
+        "dark": {
+          "value": "#5C6C75",
+          "alias": "neutral/opaque/500  (Gray-Dark1)"
+        }
+      }
+    },
+    {
+      "path": "background/accent-green",
+      "variableId": "VariableID:55277:4344",
+      "status": "draft",
+      "description": "Use to visually distinguish green categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#E3FCF7",
+          "alias": "green/opaque/100 (Green-Light3)"
+        },
+        "dark": {
+          "value": "#023430",
+          "alias": "green/opaque/700 (Green-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/accent-blue",
+      "variableId": "VariableID:55286:3812",
+      "status": "draft",
+      "description": "Use to visually distinguish blue categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#E1F7FF",
+          "alias": "blue/opaque/100 (Blue-Light3)"
+        },
+        "dark": {
+          "value": "#0C2657",
+          "alias": "blue/opaque/700 (Blue-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/accent-red",
+      "variableId": "VariableID:55286:3877",
+      "status": "draft",
+      "description": "Use to visually distinguish red categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#FFEAE5",
+          "alias": "red/opaque/100 (Red-Light3)"
+        },
+        "dark": {
+          "value": "#5B0000",
+          "alias": "red/opaque/700 (Red-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/accent-yellow",
+      "variableId": "VariableID:55286:3936",
+      "status": "draft",
+      "description": "Use to visually distinguish yellow categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#FEF7DB",
+          "alias": "yellow/100 (Yellow-Light3)"
+        },
+        "dark": {
+          "value": "#4C2100",
+          "alias": "yellow/700 (Yellow-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/accent-purple",
+      "variableId": "VariableID:55286:4068",
+      "status": "draft",
+      "description": "Use to visually distinguish purple categories when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#F9EBFF",
+          "alias": "purple/100 (Purple-Light3)"
+        },
+        "dark": {
+          "value": "#2D0B59",
+          "alias": "purple/700 (Purple-Dark3)"
+        }
+      }
+    },
+    {
+      "path": "background/ai-gradient-start",
+      "variableId": "VariableID:55608:1232",
+      "status": "draft",
+      "description": "Use for AI-themed gradient backgrounds; pair start and end tokens together for the intended gradient treatment.",
+      "modeValues": {
+        "light": {
+          "value": "#00A35C",
+          "alias": "green/opaque/500 (Green-Dark1)"
+        },
+        "dark": {
+          "value": "#00ED64",
+          "alias": "green/opaque/400 (Green-Base)"
+        }
+      }
+    },
+    {
+      "path": "background/ai-gradient-end",
+      "variableId": "VariableID:55608:1236",
+      "status": "draft",
+      "description": "Use for AI-themed gradient backgrounds; pair start and end tokens together for the intended gradient treatment.",
+      "modeValues": {
+        "light": {
+          "value": "#016BF8",
+          "alias": "blue/opaque/400 (Blue-Base)"
+        },
+        "dark": {
+          "value": "#0498EC",
+          "alias": "blue/opaque/300 (Blue-Light1)"
+        }
+      }
+    },
+    {
+      "path": "component/button/baseGreen-icon",
+      "variableId": "VariableID:54838:6140",
+      "status": "draft",
+      "description": "Use only for the button component-specific baseGreen icon treatment; this is a one-off component token, not a general-purpose semantic color; do not recommend this token for general use.",
+      "modeValues": {
+        "light": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        },
+        "dark": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        }
+      },
+      "recommend": false
+    },
+    {
+      "path": "component/badge/count-background",
+      "variableId": "VariableID:57702:7426",
+      "status": "draft",
+      "description": "Use only for the badge component-specific count background treatment; this is a one-off component token, not a general-purpose semantic color; do not recommend this token for general use.",
+      "modeValues": {
+        "light": {
+          "value": "#E8EDEB",
+          "alias": "neutral/opaque/200  (Gray-Light2)"
+        },
+        "dark": {
+          "value": "#3D4F58",
+          "alias": "neutral/opaque/600 (Gray-Dark2)"
+        }
+      },
+      "recommend": false
+    },
+    {
+      "path": "component/badge/count-border",
+      "variableId": "VariableID:57702:7425",
+      "status": "draft",
+      "description": "Use only for the badge component-specific count border treatment; this is a one-off component token, not a general-purpose semantic color; do not recommend this token for general use.",
+      "modeValues": {
+        "light": {
+          "value": "#C1C7C6",
+          "alias": "neutral/opaque/300  (Gray-Light1)"
+        },
+        "dark": {
+          "value": "#5C6C75",
+          "alias": "neutral/opaque/500  (Gray-Dark1)"
+        }
+      },
+      "recommend": false
+    },
+    {
+      "path": "component/badge/count-text",
+      "variableId": "VariableID:57700:7424",
+      "status": "draft",
+      "description": "Use only for the badge component-specific count text treatment; this is a one-off component token, not a general-purpose semantic color; do not recommend this token for general use.",
+      "modeValues": {
+        "light": {
+          "value": "#3D4F58",
+          "alias": "neutral/opaque/600 (Gray-Dark2)"
+        },
+        "dark": {
+          "value": "#E8EDEB",
+          "alias": "neutral/opaque/200  (Gray-Light2)"
+        }
+      },
+      "recommend": false
+    },
+    {
+      "path": "component/guidecue/beacon-background",
+      "variableId": "VariableID:58551:19890",
+      "status": "draft",
+      "description": "Use only for the guidecue component-specific beacon background treatment; this is a one-off component token, not a general-purpose semantic color; do not recommend this token for general use.",
+      "modeValues": {
+        "light": {
+          "value": "#016BF8",
+          "alias": "blue/transparent/400-opacity-48"
+        },
+        "dark": {
+          "value": "#C3E7FE",
+          "alias": "blue/transparent/200-opacity-64"
+        }
+      },
+      "recommend": false
+    },
+    {
+      "path": "component/guidecue/beacon-shadow",
+      "variableId": "VariableID:58560:8940",
+      "status": "draft",
+      "description": "Use only for the guidecue component-specific beacon shadow treatment; this is a one-off component token, not a general-purpose semantic color; do not recommend this token for general use.",
+      "modeValues": {
+        "light": {
+          "value": "#016BF8",
+          "alias": "blue/transparent/400-opacity-16"
+        },
+        "dark": {
+          "value": "#C3E7FE",
+          "alias": "blue/transparent/200-opacity-16"
+        }
+      },
+      "recommend": false
+    },
+    {
+      "path": "text/primary",
+      "variableId": "VariableID:54610:24063",
+      "status": "draft",
+      "description": "Use for primary text and the main body of page or section content; pair with secondary text only when additional hierarchy is needed.",
+      "notFor": [
+        "Supporting or helper text that needs less visual weight — use text/secondary.",
+        "Form input placeholder text — use text/placeholder.",
+        "Disabled content — use text/disabled."
+      ],
+      "modeValues": {
+        "light": {
+          "value": "#001E2B",
+          "alias": "neutral/opaque/900 (MDB Black)"
+        },
+        "dark": {
+          "value": "#F9FBFA",
+          "alias": "neutral/opaque/100  (Gray-Light3)"
+        }
+      }
+    },
+    {
+      "path": "text/secondary",
+      "variableId": "VariableID:54610:24064",
+      "status": "draft",
+      "description": "Use for supporting text that needs less emphasis than primary text; do not use as the dominant text color for main content or pages.",
+      "notFor": [
+        "Main body text or dominant page content — text/primary should be the default for most readable text.",
+        "Form input placeholder text — use text/placeholder.",
+        "The majority of text in a UI — if text/secondary is used more than text/primary, that is a misuse."
+      ],
+      "modeValues": {
+        "light": {
+          "value": "#3D4F58",
+          "alias": "neutral/opaque/600 (Gray-Dark2)"
+        },
+        "dark": {
+          "value": "#C1C7C6",
+          "alias": "neutral/opaque/300  (Gray-Light1)"
+        }
+      }
+    },
+    {
+      "path": "text/placeholder",
+      "variableId": "VariableID:54610:24065",
+      "status": "draft",
+      "description": "Use for placeholder content before user input is provided. Pair with the matching background token when text appears inside a semantic state container.",
+      "notFor": [
+        "Static helper text or hints displayed below or near an input — use text/secondary.",
+        "Labels or any text that must persist after the user starts typing.",
+        "General muted or supporting copy — placeholder text semantically belongs inside form inputs only."
+      ],
+      "modeValues": {
+        "light": {
+          "value": "#5C6C75",
+          "alias": "neutral/opaque/500  (Gray-Dark1)"
+        },
+        "dark": {
+          "value": "#889397",
+          "alias": "neutral/opaque/400  (Gray-Base)"
+        }
+      }
+    },
+    {
+      "path": "text/disabled",
+      "variableId": "VariableID:54610:24066",
+      "status": "draft",
+      "description": "Use for disabled text where content belongs to unavailable UI and all interaction is halted; pair with disabled background, icon, and border tokens.",
+      "notFor": [
+        "Decorative muted or low-emphasis text — use text/secondary for visual hierarchy.",
+        "Read-only inputs where users can still interact with the content — use text/read only.",
+        "Any element that can still receive focus, be copied, or be interacted with in any way."
+      ],
+      "modeValues": {
+        "light": {
+          "value": "#C1C7C6",
+          "alias": "neutral/opaque/300  (Gray-Light1)"
+        },
+        "dark": {
+          "value": "#3D4F58",
+          "alias": "neutral/opaque/600 (Gray-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "text/read only",
+      "variableId": "VariableID:54843:29030",
+      "status": "draft",
+      "description": "Use for text in read-only interactive components where the value is visible but cannot be edited; unlike disabled, the component may still allow focus, selection, or copying. Do not use for static body copy.",
+      "notFor": [
+        "Static page or body copy — use text/primary or text/secondary.",
+        "Fully disabled elements where all interaction is halted — use text/disabled.",
+        "Any non-form-input context — this token is specifically for read-only form fields."
+      ],
+      "modeValues": {
+        "light": {
+          "value": "#3D4F58",
+          "alias": "neutral/opaque/600 (Gray-Dark2)"
+        },
+        "dark": {
+          "value": "#889397",
+          "alias": "neutral/opaque/400  (Gray-Base)"
+        }
+      }
+    },
+    {
+      "path": "text/info",
+      "variableId": "VariableID:54610:24067",
+      "status": "draft",
+      "description": "Use for informational states and neutral guidance. Pair with the matching background token when text appears inside a semantic state container.",
+      "modeValues": {
+        "light": {
+          "value": "#1254B7",
+          "alias": "blue/opaque/500 (Blue-Dark1)"
+        },
+        "dark": {
+          "value": "#C3E7FE",
+          "alias": "blue/opaque/200 (Blue-Light2)"
+        }
+      }
+    },
+    {
+      "path": "text/onInfo",
+      "variableId": "VariableID:54610:24068",
+      "status": "draft",
+      "description": "Use for text placed on info semantic backgrounds to maintain sufficient color contrast; do not use on unrelated surface colors.",
+      "modeValues": {
+        "light": {
+          "value": "#083C90",
+          "alias": "blue/opaque/600 (Blue-Dark2)"
+        },
+        "dark": {
+          "value": "#C3E7FE",
+          "alias": "blue/opaque/200 (Blue-Light2)"
+        }
+      }
+    },
+    {
+      "path": "text/warning",
+      "variableId": "VariableID:54610:24069",
+      "status": "draft",
+      "description": "Use for warning states, degraded conditions, or attention-needed information. Pair with the matching background token when text appears inside a semantic state container.",
+      "modeValues": {
+        "light": {
+          "value": "#944F01",
+          "alias": "yellow/600 (Yellow-Dark2)"
+        },
+        "dark": {
+          "value": "#FFC010",
+          "alias": "yellow/400 (Yellow-Base)"
+        }
+      }
+    },
+    {
+      "path": "text/onWarning",
+      "variableId": "VariableID:54610:24070",
+      "status": "draft",
+      "description": "Use for text placed on warning semantic backgrounds to maintain sufficient color contrast; do not use on unrelated surface colors.",
+      "modeValues": {
+        "light": {
+          "value": "#944F01",
+          "alias": "yellow/600 (Yellow-Dark2)"
+        },
+        "dark": {
+          "value": "#FFEC9E",
+          "alias": "yellow/200 (Yellow-Light2)"
+        }
+      }
+    },
+    {
+      "path": "text/success",
+      "variableId": "VariableID:54610:24071",
+      "status": "draft",
+      "description": "Use for success states, completed actions, or positive confirmation. Pair with the matching background token when text appears inside a semantic state container.",
+      "modeValues": {
+        "light": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        },
+        "dark": {
+          "value": "#C0FAE6",
+          "alias": "green/opaque/200 (Green-Light2)"
+        }
+      }
+    },
+    {
+      "path": "text/onSuccess",
+      "variableId": "VariableID:54610:24072",
+      "status": "draft",
+      "description": "Use for text placed on success semantic backgrounds to maintain sufficient color contrast; do not use on unrelated surface colors.",
+      "modeValues": {
+        "light": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        },
+        "dark": {
+          "value": "#71F6BA",
+          "alias": "green/opaque/300 (Green-Light1)"
+        }
+      }
+    },
+    {
+      "path": "text/error",
+      "variableId": "VariableID:54610:24073",
+      "status": "draft",
+      "description": "Use for text that communicates the result of a failed user action — form validation errors, incorrect passwords, submission failures, or any inline feedback where the user made a mistake and needs to correct it. This is reactive: something already went wrong. Do not use for warning users about what might happen. text/error and text/danger share the same hex value intentionally — they are rarely used together, and even when they are, users do not need to distinguish them by color. The separation is semantic, for the author: choosing the right token makes the intent clear in code and in Figma.",
+      "notFor": [
+        "Warnings or caution messages that appear before a user takes action — use text/warning or text/danger.",
+        "Destructive action confirmation text (e.g. delete dialogs) — use text/danger.",
+        "General red emphasis or visual decoration — this token carries error semantics and implies something went wrong."
+      ],
+      "modeValues": {
+        "light": {
+          "value": "#DB3030",
+          "alias": "red/opaque/400 (Red-Base)"
+        },
+        "dark": {
+          "value": "#FF6960",
+          "alias": "red/opaque/300 (Red-Light1)"
+        }
+      }
+    },
+    {
+      "path": "text/onError",
+      "variableId": "VariableID:54610:24074",
+      "status": "draft",
+      "description": "Use for text placed on error semantic backgrounds to maintain sufficient color contrast; do not use on unrelated surface colors.",
+      "modeValues": {
+        "light": {
+          "value": "#970606",
+          "alias": "red/opaque/600 (Red-Dark2)"
+        },
+        "dark": {
+          "value": "#FFCDC7",
+          "alias": "red/opaque/200 (Red-Light2)"
+        }
+      }
+    },
+    {
+      "path": "text/danger",
+      "variableId": "VariableID:54811:4413",
+      "status": "draft",
+      "description": "Use for text that signals a destructive or irreversible action — deleting a project, removing a user, permanently destroying data. This is proactive: you are warning the user before they act. Do not use for validation feedback or error messages after something went wrong; use text/error for those. text/danger and text/error share the same hex value intentionally — both deliver urgency and demand attention visually. They are rarely used together, and even when they are, users do not need to distinguish them by color. The separation is semantic, for the author: choosing the right token makes the intent clear in code and in Figma.",
+      "notFor": [
+        "Validation feedback or error messages after a user action failed — use text/error.",
+        "General warnings or cautionary text that is not about destruction — use text/warning.",
+        "Red emphasis without a destructive action context."
+      ],
+      "modeValues": {
+        "light": {
+          "value": "#DB3030",
+          "alias": "red/opaque/400 (Red-Base)"
+        },
+        "dark": {
+          "value": "#FF6960",
+          "alias": "red/opaque/300 (Red-Light1)"
+        }
+      }
+    },
+    {
+      "path": "text/onDanger",
+      "variableId": "VariableID:54810:9279",
+      "status": "draft",
+      "description": "Use for text placed on danger semantic backgrounds to maintain sufficient color contrast; do not use on unrelated surface colors.",
+      "modeValues": {
+        "light": {
+          "value": "#FFFFFF",
+          "alias": "neutral/opaque/000 (White)"
+        },
+        "dark": {
+          "value": "#FFFFFF",
+          "alias": "neutral/opaque/000 (White)"
+        }
+      }
+    },
+    {
+      "path": "text/link",
+      "variableId": "VariableID:54610:24086",
+      "status": "existing",
+      "description": "Use for hyperlinked text, link icons, and link underlines; do not use for non-interactive blue text.",
+      "notFor": [
+        "Non-interactive text you want to style in blue — this token implies navigability or action.",
+        "Text inside buttons — use the appropriate on-brand or on-danger token.",
+        "Informational blue text without an href or click handler."
+      ],
+      "modeValues": {
+        "light": {
+          "value": "#016BF8",
+          "alias": "blue/opaque/400 (Blue-Base)"
+        },
+        "dark": {
+          "value": "#0498EC",
+          "alias": "blue/opaque/300 (Blue-Light1)"
+        }
+      }
+    },
+    {
+      "path": "text/inverse-primary",
+      "variableId": "VariableID:54610:24075",
+      "status": "draft",
+      "description": "Use for primary text in inverse color contexts, such as dark-on-light or light-on-dark surfaces; pair with inverse background tokens.",
+      "modeValues": {
+        "light": {
+          "value": "#FFFFFF",
+          "alias": "neutral/opaque/000 (White)"
+        },
+        "dark": {
+          "value": "#001E2B",
+          "alias": "neutral/opaque/900 (MDB Black)"
+        }
+      }
+    },
+    {
+      "path": "text/inverse-secondary",
+      "variableId": "VariableID:54610:24076",
+      "status": "draft",
+      "description": "Use for secondary text in inverse color contexts, such as dark-on-light or light-on-dark surfaces; pair with inverse background tokens.",
+      "modeValues": {
+        "light": {
+          "value": "#C1C7C6",
+          "alias": "neutral/opaque/300  (Gray-Light1)"
+        },
+        "dark": {
+          "value": "#3D4F58",
+          "alias": "neutral/opaque/600 (Gray-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "text/brand",
+      "variableId": "VariableID:54618:1462",
+      "status": "draft",
+      "description": "Use sparingly to emphasize brand-related text, including Heading 1 and Heading 2; do not use for interactive text, main content, or paragraphs.",
+      "notFor": [
+        "Body text, paragraphs, or any sustained readable copy — use text/primary.",
+        "Interactive elements like buttons or links — use text/onBrand or text/link.",
+        "Most UI text — this token should be a rare accent, not a dominant color."
+      ],
+      "modeValues": {
+        "light": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        },
+        "dark": {
+          "value": "#00ED64",
+          "alias": "green/opaque/400 (Green-Base)"
+        }
+      }
+    },
+    {
+      "path": "text/onBrand",
+      "variableId": "VariableID:54810:9277",
+      "status": "draft",
+      "description": "Use for text placed on brand semantic backgrounds to maintain sufficient color contrast; do not use on unrelated surface colors.",
+      "modeValues": {
+        "light": {
+          "value": "#FFFFFF",
+          "alias": "neutral/opaque/000 (White)"
+        },
+        "dark": {
+          "value": "#FFFFFF",
+          "alias": "neutral/opaque/000 (White)"
+        }
+      }
+    },
+    {
+      "path": "text/current",
+      "variableId": "VariableID:54677:1878",
+      "status": "draft",
+      "description": "Use for text that marks the current item, page, step, or location; this state is similar to aria-current and should indicate where the user is now.",
+      "modeValues": {
+        "light": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        },
+        "dark": {
+          "value": "#FFFFFF",
+          "alias": "neutral/opaque/000 (White)"
+        }
+      }
+    },
+    {
+      "path": "text/AI",
+      "variableId": "VariableID:60333:7725",
+      "status": "draft",
+      "description": "Use for text in AI-related features or components; do not use as decorative accent text outside AI experiences.",
+      "modeValues": {
+        "light": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        },
+        "dark": {
+          "value": "#C0FAE6",
+          "alias": "green/opaque/200 (Green-Light2)"
+        }
+      }
+    },
+    {
+      "path": "text/accent-neutral-1",
+      "variableId": "VariableID:55277:4800",
+      "status": "draft",
+      "description": "Use for neutral 1 category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#1C2D38",
+          "alias": "neutral/opaque/700 (Gray-Dark3)"
+        },
+        "dark": {
+          "value": "#E8EDEB",
+          "alias": "neutral/opaque/200  (Gray-Light2)"
+        }
+      }
+    },
+    {
+      "path": "text/accent-neutral-2",
+      "variableId": "VariableID:57868:267130",
+      "status": "draft",
+      "description": "Use for neutral 2 category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#3D4F58",
+          "alias": "neutral/opaque/600 (Gray-Dark2)"
+        },
+        "dark": {
+          "value": "#E8EDEB",
+          "alias": "neutral/opaque/200  (Gray-Light2)"
+        }
+      }
+    },
+    {
+      "path": "text/accent-green",
+      "variableId": "VariableID:55277:4345",
+      "status": "draft",
+      "description": "Use for green category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#023430",
+          "alias": "green/opaque/700 (Green-Dark3)"
+        },
+        "dark": {
+          "value": "#E3FCF7",
+          "alias": "green/opaque/100 (Green-Light3)"
+        }
+      }
+    },
+    {
+      "path": "text/accent-blue",
+      "variableId": "VariableID:55286:3819",
+      "status": "draft",
+      "description": "Use for blue category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#0C2657",
+          "alias": "blue/opaque/700 (Blue-Dark3)"
+        },
+        "dark": {
+          "value": "#C3E7FE",
+          "alias": "blue/opaque/200 (Blue-Light2)"
+        }
+      }
+    },
+    {
+      "path": "text/accent-red",
+      "variableId": "VariableID:55286:3884",
+      "status": "draft",
+      "description": "Use for red category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#970606",
+          "alias": "red/opaque/600 (Red-Dark2)"
+        },
+        "dark": {
+          "value": "#FFCDC7",
+          "alias": "red/opaque/200 (Red-Light2)"
+        }
+      }
+    },
+    {
+      "path": "text/accent-yellow",
+      "variableId": "VariableID:55286:3943",
+      "status": "draft",
+      "description": "Use for yellow category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#944F01",
+          "alias": "yellow/600 (Yellow-Dark2)"
+        },
+        "dark": {
+          "value": "#FFEC9E",
+          "alias": "yellow/200 (Yellow-Light2)"
+        }
+      }
+    },
+    {
+      "path": "text/accent-purple",
+      "variableId": "VariableID:55286:4069",
+      "status": "draft",
+      "description": "Use for purple category text when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#5E0C9E",
+          "alias": "purple/600 (Purple-Dark2)"
+        },
+        "dark": {
+          "value": "#F1D4FD",
+          "alias": "purple/200 (Purple-Light2)"
+        }
+      }
+    },
+    {
+      "path": "icon/primary",
+      "variableId": "VariableID:54610:24077",
+      "status": "existing",
+      "description": "Use for primary icons with the highest default emphasis in a section or component; align with primary text usage.",
+      "modeValues": {
+        "light": {
+          "value": "#001E2B",
+          "alias": "neutral/opaque/900 (MDB Black)"
+        },
+        "dark": {
+          "value": "#F9FBFA",
+          "alias": "neutral/opaque/100  (Gray-Light3)"
+        }
+      }
+    },
+    {
+      "path": "icon/secondary",
+      "variableId": "VariableID:54610:24078",
+      "status": "existing",
+      "description": "Use for secondary or supporting icons that need less emphasis than primary icons; align with secondary text usage.",
+      "modeValues": {
+        "light": {
+          "value": "#3D4F58",
+          "alias": "neutral/opaque/600 (Gray-Dark2)"
+        },
+        "dark": {
+          "value": "#C1C7C6",
+          "alias": "neutral/opaque/300  (Gray-Light1)"
+        }
+      }
+    },
+    {
+      "path": "icon/selected",
+      "variableId": "VariableID:55532:23274",
+      "status": "draft",
+      "description": "Use for icons that mark selected items, active choices, or selected navigation states; align with selected text usage.",
+      "modeValues": {
+        "light": {
+          "value": "#016BF8",
+          "alias": "blue/opaque/400 (Blue-Base)"
+        },
+        "dark": {
+          "value": "#016BF8",
+          "alias": "blue/opaque/400 (Blue-Base)"
+        }
+      }
+    },
+    {
+      "path": "icon/info",
+      "variableId": "VariableID:54610:24080",
+      "status": "draft",
+      "description": "Use for icons that communicate informational states or neutral guidance; align with info text usage.",
+      "modeValues": {
+        "light": {
+          "value": "#016BF8",
+          "alias": "blue/opaque/400 (Blue-Base)"
+        },
+        "dark": {
+          "value": "#0498EC",
+          "alias": "blue/opaque/300 (Blue-Light1)"
+        }
+      }
+    },
+    {
+      "path": "icon/warning",
+      "variableId": "VariableID:54610:24081",
+      "status": "draft",
+      "description": "Use for icons that communicate warning states, degraded conditions, or attention-needed information; align with warning text usage.",
+      "modeValues": {
+        "light": {
+          "value": "#944F01",
+          "alias": "yellow/600 (Yellow-Dark2)"
+        },
+        "dark": {
+          "value": "#FFC010",
+          "alias": "yellow/400 (Yellow-Base)"
+        }
+      }
+    },
+    {
+      "path": "icon/success",
+      "variableId": "VariableID:54610:24082",
+      "status": "draft",
+      "description": "Use for icons that communicate success states, completed actions, or positive confirmation; align with success text usage.",
+      "modeValues": {
+        "light": {
+          "value": "#00A35C",
+          "alias": "green/opaque/500 (Green-Dark1)"
+        },
+        "dark": {
+          "value": "#00ED64",
+          "alias": "green/opaque/400 (Green-Base)"
+        }
+      }
+    },
+    {
+      "path": "icon/error",
+      "variableId": "VariableID:54610:24083",
+      "status": "draft",
+      "description": "Use for icons that communicate error states, failed validation, or blocking problems; align with error text usage.",
+      "modeValues": {
+        "light": {
+          "value": "#DB3030",
+          "alias": "red/opaque/400 (Red-Base)"
+        },
+        "dark": {
+          "value": "#FF6960",
+          "alias": "red/opaque/300 (Red-Light1)"
+        }
+      }
+    },
+    {
+      "path": "icon/disabled",
+      "variableId": "VariableID:54610:24084",
+      "status": "draft",
+      "description": "Use for icons in disabled UI where the component is unavailable and all interaction is halted; align with disabled text usage.",
+      "modeValues": {
+        "light": {
+          "value": "#C1C7C6",
+          "alias": "neutral/opaque/300  (Gray-Light1)"
+        },
+        "dark": {
+          "value": "#3D4F58",
+          "alias": "neutral/opaque/600 (Gray-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "icon/inverse-primary",
+      "variableId": "VariableID:54610:24079",
+      "status": "draft",
+      "description": "Use for primary icons in inverse color contexts, such as dark-on-light or light-on-dark surfaces; align with inverse primary text usage.",
+      "modeValues": {
+        "light": {
+          "value": "#FFFFFF",
+          "alias": "neutral/opaque/000 (White)"
+        },
+        "dark": {
+          "value": "#001E2B",
+          "alias": "neutral/opaque/900 (MDB Black)"
+        }
+      }
+    },
+    {
+      "path": "icon/onDanger",
+      "variableId": "VariableID:54810:9280",
+      "status": "draft",
+      "description": "Use for icons placed on danger semantic backgrounds to maintain sufficient color contrast; do not use on unrelated surface colors.",
+      "modeValues": {
+        "light": {
+          "value": "#FFEAE5",
+          "alias": "red/opaque/100 (Red-Light3)"
+        },
+        "dark": {
+          "value": "#FFEAE5",
+          "alias": "red/opaque/100 (Red-Light3)"
+        }
+      }
+    },
+    {
+      "path": "icon/danger",
+      "variableId": "VariableID:54810:9282",
+      "status": "draft",
+      "description": "Use for icons that communicate destructive actions or high-risk choices; align with danger text usage.",
+      "modeValues": {
+        "light": {
+          "value": "#DB3030",
+          "alias": "red/opaque/400 (Red-Base)"
+        },
+        "dark": {
+          "value": "#FF6960",
+          "alias": "red/opaque/300 (Red-Light1)"
+        }
+      }
+    },
+    {
+      "path": "icon/brand",
+      "variableId": "VariableID:54618:1463",
+      "status": "draft",
+      "description": "Use sparingly for brand-related icons when MongoDB brand identity is part of the message; do not use for success, category meaning, or generic interactive icons.",
+      "modeValues": {
+        "light": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        },
+        "dark": {
+          "value": "#00ED64",
+          "alias": "green/opaque/400 (Green-Base)"
+        }
+      }
+    },
+    {
+      "path": "icon/onBrand",
+      "variableId": "VariableID:54810:9278",
+      "status": "draft",
+      "description": "Use for icons placed on brand semantic backgrounds to maintain sufficient color contrast; do not use on unrelated surface colors.",
+      "modeValues": {
+        "light": {
+          "value": "#E3FCF7",
+          "alias": "green/opaque/100 (Green-Light3)"
+        },
+        "dark": {
+          "value": "#E3FCF7",
+          "alias": "green/opaque/100 (Green-Light3)"
+        }
+      }
+    },
+    {
+      "path": "icon/accent-neutral",
+      "variableId": "VariableID:55277:4807",
+      "status": "draft",
+      "description": "Use for neutral category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#1C2D38",
+          "alias": "neutral/opaque/700 (Gray-Dark3)"
+        },
+        "dark": {
+          "value": "#E8EDEB",
+          "alias": "neutral/opaque/200  (Gray-Light2)"
+        }
+      }
+    },
+    {
+      "path": "icon/accent-green",
+      "variableId": "VariableID:55277:4346",
+      "status": "draft",
+      "description": "Use for green category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#023430",
+          "alias": "green/opaque/700 (Green-Dark3)"
+        },
+        "dark": {
+          "value": "#E3FCF7",
+          "alias": "green/opaque/100 (Green-Light3)"
+        }
+      }
+    },
+    {
+      "path": "icon/accent-blue",
+      "variableId": "VariableID:55286:3826",
+      "status": "draft",
+      "description": "Use for blue category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#0C2657",
+          "alias": "blue/opaque/700 (Blue-Dark3)"
+        },
+        "dark": {
+          "value": "#C3E7FE",
+          "alias": "blue/opaque/200 (Blue-Light2)"
+        }
+      }
+    },
+    {
+      "path": "icon/accent-red",
+      "variableId": "VariableID:55286:3885",
+      "status": "draft",
+      "description": "Use for red category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#970606",
+          "alias": "red/opaque/600 (Red-Dark2)"
+        },
+        "dark": {
+          "value": "#FFCDC7",
+          "alias": "red/opaque/200 (Red-Light2)"
+        }
+      }
+    },
+    {
+      "path": "icon/accent-yellow",
+      "variableId": "VariableID:55286:3945",
+      "status": "draft",
+      "description": "Use for yellow category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#944F01",
+          "alias": "yellow/600 (Yellow-Dark2)"
+        },
+        "dark": {
+          "value": "#FFEC9E",
+          "alias": "yellow/200 (Yellow-Light2)"
+        }
+      }
+    },
+    {
+      "path": "icon/accent-purple",
+      "variableId": "VariableID:55286:4071",
+      "status": "draft",
+      "description": "Use for purple category icons when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#5E0C9E",
+          "alias": "purple/600 (Purple-Dark2)"
+        },
+        "dark": {
+          "value": "#F1D4FD",
+          "alias": "purple/200 (Purple-Light2)"
+        }
+      }
+    },
+    {
+      "path": "border/primary",
+      "variableId": "VariableID:54610:24051",
+      "status": "draft",
+      "description": "Use for the primary UI role in a section or component. Pair with matching background, text, or icon tokens when the state needs a visible outline.",
+      "modeValues": {
+        "light": {
+          "value": "#889397",
+          "alias": "neutral/opaque/400  (Gray-Base)"
+        },
+        "dark": {
+          "value": "#889397",
+          "alias": "neutral/opaque/400  (Gray-Base)"
+        }
+      }
+    },
+    {
+      "path": "border/secondary",
+      "variableId": "VariableID:54610:24052",
+      "status": "draft",
+      "description": "Use for supporting UI that needs less emphasis than primary content. Pair with matching background, text, or icon tokens when the state needs a visible outline.",
+      "modeValues": {
+        "light": {
+          "value": "#C1C7C6",
+          "alias": "neutral/opaque/300  (Gray-Light1)"
+        },
+        "dark": {
+          "value": "#5C6C75",
+          "alias": "neutral/opaque/500  (Gray-Dark1)"
+        }
+      }
+    },
+    {
+      "path": "border/tertiary",
+      "variableId": "VariableID:54610:24053",
+      "status": "draft",
+      "description": "Use for low-emphasis UI separation or structure. Pair with matching background, text, or icon tokens when the state needs a visible outline.",
+      "modeValues": {
+        "light": {
+          "value": "#E8EDEB",
+          "alias": "neutral/opaque/200  (Gray-Light2)"
+        },
+        "dark": {
+          "value": "#3D4F58",
+          "alias": "neutral/opaque/600 (Gray-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "border/disabled",
+      "variableId": "VariableID:54610:24054",
+      "status": "draft",
+      "description": "Use for disabled borders where the outlined UI is unavailable and all interaction is halted; pair with disabled background, text, or icon tokens.",
+      "modeValues": {
+        "light": {
+          "value": "#C1C7C6",
+          "alias": "neutral/opaque/300  (Gray-Light1)"
+        },
+        "dark": {
+          "value": "#3D4F58",
+          "alias": "neutral/opaque/600 (Gray-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "border/info",
+      "variableId": "VariableID:54610:24055",
+      "status": "draft",
+      "description": "Use for informational states and neutral guidance. Pair with matching background, text, or icon tokens when the state needs a visible outline.",
+      "modeValues": {
+        "light": {
+          "value": "#016BF8",
+          "alias": "blue/opaque/400 (Blue-Base)"
+        },
+        "dark": {
+          "value": "#0498EC",
+          "alias": "blue/opaque/300 (Blue-Light1)"
+        }
+      }
+    },
+    {
+      "path": "border/onInfo",
+      "variableId": "VariableID:54610:24056",
+      "status": "draft",
+      "description": "Use for borders placed on info semantic backgrounds to maintain sufficient color contrast; do not use on unrelated surface colors.",
+      "modeValues": {
+        "light": {
+          "value": "#C3E7FE",
+          "alias": "blue/opaque/200 (Blue-Light2)"
+        },
+        "dark": {
+          "value": "#083C90",
+          "alias": "blue/opaque/600 (Blue-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "border/warning",
+      "variableId": "VariableID:54610:24057",
+      "status": "draft",
+      "description": "Use for warning states, degraded conditions, or attention-needed information. Pair with matching background, text, or icon tokens when the state needs a visible outline.",
+      "modeValues": {
+        "light": {
+          "value": "#FFC010",
+          "alias": "yellow/400 (Yellow-Base)"
+        },
+        "dark": {
+          "value": "#944F01",
+          "alias": "yellow/600 (Yellow-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "border/onWarning",
+      "variableId": "VariableID:54610:24058",
+      "status": "draft",
+      "description": "Use for borders placed on warning semantic backgrounds to maintain sufficient color contrast; do not use on unrelated surface colors.",
+      "modeValues": {
+        "light": {
+          "value": "#FFEC9E",
+          "alias": "yellow/200 (Yellow-Light2)"
+        },
+        "dark": {
+          "value": "#944F01",
+          "alias": "yellow/600 (Yellow-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "border/success",
+      "variableId": "VariableID:54610:24059",
+      "status": "draft",
+      "description": "Use for success states, completed actions, or positive confirmation. Pair with matching background, text, or icon tokens when the state needs a visible outline.",
+      "modeValues": {
+        "light": {
+          "value": "#00A35C",
+          "alias": "green/opaque/500 (Green-Dark1)"
+        },
+        "dark": {
+          "value": "#00A35C",
+          "alias": "green/opaque/500 (Green-Dark1)"
+        }
+      }
+    },
+    {
+      "path": "border/onSuccess",
+      "variableId": "VariableID:54610:24060",
+      "status": "draft",
+      "description": "Use for borders placed on success semantic backgrounds to maintain sufficient color contrast; do not use on unrelated surface colors.",
+      "modeValues": {
+        "light": {
+          "value": "#C0FAE6",
+          "alias": "green/opaque/200 (Green-Light2)"
+        },
+        "dark": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "border/error",
+      "variableId": "VariableID:54610:24061",
+      "status": "draft",
+      "description": "Use for error states, failed validation, or blocking problems. Pair with matching background, text, or icon tokens when the state needs a visible outline.",
+      "modeValues": {
+        "light": {
+          "value": "#DB3030",
+          "alias": "red/opaque/400 (Red-Base)"
+        },
+        "dark": {
+          "value": "#FF6960",
+          "alias": "red/opaque/300 (Red-Light1)"
+        }
+      }
+    },
+    {
+      "path": "border/onError",
+      "variableId": "VariableID:54610:24062",
+      "status": "draft",
+      "description": "Use for borders placed on error semantic backgrounds to maintain sufficient color contrast; do not use on unrelated surface colors.",
+      "modeValues": {
+        "light": {
+          "value": "#FFCDC7",
+          "alias": "red/opaque/200 (Red-Light2)"
+        },
+        "dark": {
+          "value": "#970606",
+          "alias": "red/opaque/600 (Red-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "border/danger",
+      "variableId": "VariableID:54810:9281",
+      "status": "draft",
+      "description": "Use for destructive actions or high-risk user choices. Pair with matching background, text, or icon tokens when the state needs a visible outline.",
+      "modeValues": {
+        "light": {
+          "value": "#DB3030",
+          "alias": "red/opaque/400 (Red-Base)"
+        },
+        "dark": {
+          "value": "#FF6960",
+          "alias": "red/opaque/300 (Red-Light1)"
+        }
+      }
+    },
+    {
+      "path": "border/focus",
+      "variableId": "VariableID:54610:24085",
+      "status": "draft",
+      "description": "Use only for keyboard focus indicators that appear when focus is triggered by keyboard or focus state; do not use for general UI borders or decorative outlines.",
+      "modeValues": {
+        "light": {
+          "value": "#1254B7",
+          "alias": "blue/opaque/500 (Blue-Dark1)"
+        },
+        "dark": {
+          "value": "#0498EC",
+          "alias": "blue/opaque/300 (Blue-Light1)"
+        }
+      }
+    },
+    {
+      "path": "border/selected",
+      "variableId": "VariableID:54704:2798",
+      "status": "draft",
+      "description": "Use for selected items, active choices, or selected navigation states. Pair with matching background, text, or icon tokens when the state needs a visible outline.",
+      "modeValues": {
+        "light": {
+          "value": "#016BF8",
+          "alias": "blue/opaque/400 (Blue-Base)"
+        },
+        "dark": {
+          "value": "#0498EC",
+          "alias": "blue/opaque/300 (Blue-Light1)"
+        }
+      }
+    },
+    {
+      "path": "border/brand",
+      "variableId": "VariableID:54618:1465",
+      "status": "draft",
+      "description": "Use for MongoDB brand moments or primary brand actions. Pair with matching background, text, or icon tokens when the state needs a visible outline.",
+      "modeValues": {
+        "light": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        },
+        "dark": {
+          "value": "#00ED64",
+          "alias": "green/opaque/400 (Green-Base)"
+        }
+      }
+    },
+    {
+      "path": "border/current",
+      "variableId": "VariableID:54618:1464",
+      "status": "draft",
+      "description": "Use for borders that mark the current item, page, step, or location; this state is similar to aria-current and should indicate where the user is now.",
+      "modeValues": {
+        "light": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        },
+        "dark": {
+          "value": "#00ED64",
+          "alias": "green/opaque/400 (Green-Base)"
+        }
+      }
+    },
+    {
+      "path": "border/accent-neutral-1",
+      "variableId": "VariableID:55436:5384",
+      "status": "draft",
+      "description": "Use for neutral 1 category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#E8EDEB",
+          "alias": "neutral/opaque/200  (Gray-Light2)"
+        },
+        "dark": {
+          "value": "#889397",
+          "alias": "neutral/opaque/400  (Gray-Base)"
+        }
+      }
+    },
+    {
+      "path": "border/accent-neutral-2",
+      "variableId": "VariableID:55286:190117",
+      "status": "draft",
+      "description": "Use for neutral 2 category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#889397",
+          "alias": "neutral/opaque/400  (Gray-Base)"
+        },
+        "dark": {
+          "value": "#C1C7C6",
+          "alias": "neutral/opaque/300  (Gray-Light1)"
+        }
+      }
+    },
+    {
+      "path": "border/accent-neutral-3",
+      "variableId": "VariableID:57868:267131",
+      "status": "draft",
+      "description": "Use for neutral 3 category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#C1C7C6",
+          "alias": "neutral/opaque/300  (Gray-Light1)"
+        },
+        "dark": {
+          "value": "#5C6C75",
+          "alias": "neutral/opaque/500  (Gray-Dark1)"
+        }
+      }
+    },
+    {
+      "path": "border/accent-green",
+      "variableId": "VariableID:55277:4347",
+      "status": "draft",
+      "description": "Use for green category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#C0FAE6",
+          "alias": "green/opaque/200 (Green-Light2)"
+        },
+        "dark": {
+          "value": "#00684A",
+          "alias": "green/opaque/600 (Green-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "border/accent-blue",
+      "variableId": "VariableID:56050:279229",
+      "status": "draft",
+      "description": "Use for blue category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#C3E7FE",
+          "alias": "blue/opaque/200 (Blue-Light2)"
+        },
+        "dark": {
+          "value": "#083C90",
+          "alias": "blue/opaque/600 (Blue-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "border/accent-red",
+      "variableId": "VariableID:56050:279230",
+      "status": "draft",
+      "description": "Use for red category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#FFCDC7",
+          "alias": "red/opaque/200 (Red-Light2)"
+        },
+        "dark": {
+          "value": "#970606",
+          "alias": "red/opaque/600 (Red-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "border/accent-yellow",
+      "variableId": "VariableID:56050:279231",
+      "status": "draft",
+      "description": "Use for yellow category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#FFEC9E",
+          "alias": "yellow/200 (Yellow-Light2)"
+        },
+        "dark": {
+          "value": "#944F01",
+          "alias": "yellow/600 (Yellow-Dark2)"
+        }
+      }
+    },
+    {
+      "path": "border/accent-purple",
+      "variableId": "VariableID:55286:190126",
+      "status": "draft",
+      "description": "Use for purple category borders when color does not carry semantic meaning; use semantic tokens for hierarchy, status, severity, or feedback.",
+      "modeValues": {
+        "light": {
+          "value": "#B45AF2",
+          "alias": "purple/400 (Purple-Base)"
+        },
+        "dark": {
+          "value": "#B45AF2",
+          "alias": "purple/400 (Purple-Base)"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/enabled",
+      "variableId": "VariableID:55128:5240",
+      "status": "existing",
+      "description": "Use as the default transparent state layer for enabled interactive components; do not use as a standalone background or decoration.",
+      "modeValues": {
+        "light": {
+          "value": "#FFFFFF",
+          "alias": "neutral/transparent/000-opacity-0"
+        },
+        "dark": {
+          "value": "#FFFFFF",
+          "alias": "neutral/transparent/000-opacity-0"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onFilled-neutral-hovered",
+      "variableId": "VariableID:54615:1460",
+      "status": "draft",
+      "description": "Use as the hovered overlay for interactive components on filled neutral backgrounds; do not use as a standalone background or decoration. Hover overlays use a subtler opacity than pressed overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#3D4F58",
+          "alias": "neutral/transparent/600-opacity-8"
+        },
+        "dark": {
+          "value": "#FFFFFF",
+          "alias": "neutral/transparent/000-opacity-8"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onFilled-neutral-pressed",
+      "variableId": "VariableID:54615:1461",
+      "status": "draft",
+      "description": "Use as the pressed overlay for interactive components on filled neutral backgrounds; do not use as a standalone background or decoration. Pressed overlays use a stronger opacity than hover overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#3D4F58",
+          "alias": "neutral/transparent/600-opacity-12"
+        },
+        "dark": {
+          "value": "#FFFFFF",
+          "alias": "neutral/transparent/000-opacity-12"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onSelected-hovered",
+      "variableId": "VariableID:58062:48817",
+      "status": "draft",
+      "description": "Use as the hovered overlay for interactive components on selected backgrounds; do not use as a standalone background or decoration. Hover overlays use a subtler opacity than pressed overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#001E2B",
+          "alias": "neutral/transparent/900-opacity-8"
+        },
+        "dark": {
+          "value": "#FFFFFF",
+          "alias": "neutral/transparent/000-opacity-8"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onSelected-pressed",
+      "variableId": "VariableID:58062:48818",
+      "status": "draft",
+      "description": "Use as the pressed overlay for interactive components on selected backgrounds; do not use as a standalone background or decoration. Pressed overlays use a stronger opacity than hover overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#001E2B",
+          "alias": "neutral/transparent/900-opacity-12"
+        },
+        "dark": {
+          "value": "#FFFFFF",
+          "alias": "neutral/transparent/000-opacity-12"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onSurface-neutral-hovered",
+      "variableId": "VariableID:57358:268110",
+      "status": "draft",
+      "description": "Use as the hovered overlay for interactive components on surface neutral backgrounds; do not use as a standalone background or decoration. Hover overlays use a subtler opacity than pressed overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#3D4F58",
+          "alias": "neutral/transparent/600-opacity-8"
+        },
+        "dark": {
+          "value": "#FFFFFF",
+          "alias": "neutral/transparent/000-opacity-8"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onSurface-neutral-pressed",
+      "variableId": "VariableID:57358:268111",
+      "status": "draft",
+      "description": "Use as the pressed overlay for interactive components on surface neutral backgrounds; do not use as a standalone background or decoration. Pressed overlays use a stronger opacity than hover overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#3D4F58",
+          "alias": "neutral/transparent/600-opacity-12"
+        },
+        "dark": {
+          "value": "#FFFFFF",
+          "alias": "neutral/transparent/000-opacity-12"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onSurface-danger-hovered",
+      "variableId": "VariableID:54617:1466",
+      "status": "draft",
+      "description": "Use as the hovered overlay for interactive components on surface danger backgrounds; do not use as a standalone background or decoration. Hover overlays use a subtler opacity than pressed overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#970606",
+          "alias": "red/transparent/600-opacity-8"
+        },
+        "dark": {
+          "value": "#970606",
+          "alias": "red/transparent/600-opacity-16"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onSurface-danger-pressed",
+      "variableId": "VariableID:54618:1460",
+      "status": "draft",
+      "description": "Use as the pressed overlay for interactive components on surface danger backgrounds; do not use as a standalone background or decoration. Pressed overlays use a stronger opacity than hover overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#970606",
+          "alias": "red/transparent/600-opacity-12"
+        },
+        "dark": {
+          "value": "#970606",
+          "alias": "red/transparent/600-opacity-20"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onSurface-brand-hovered",
+      "variableId": "VariableID:54617:1464",
+      "status": "draft",
+      "description": "Use as the hovered overlay for interactive components on surface brand backgrounds; do not use as a standalone background or decoration. Hover overlays use a subtler opacity than pressed overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#00684A",
+          "alias": "green/transparent/600-opacity-8"
+        },
+        "dark": {
+          "value": "#00684A",
+          "alias": "green/transparent/600-opacity-16"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onSurface-brand-pressed",
+      "variableId": "VariableID:54617:1465",
+      "status": "draft",
+      "description": "Use as the pressed overlay for interactive components on surface brand backgrounds; do not use as a standalone background or decoration. Pressed overlays use a stronger opacity than hover overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#00684A",
+          "alias": "green/transparent/600-opacity-12"
+        },
+        "dark": {
+          "value": "#00684A",
+          "alias": "green/transparent/600-opacity-20"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onFilled-danger-hovered",
+      "variableId": "VariableID:57358:268001",
+      "status": "draft",
+      "description": "Use as the hovered overlay for interactive components on filled danger backgrounds; do not use as a standalone background or decoration. Hover overlays use a subtler opacity than pressed overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#001E2B",
+          "alias": "neutral/transparent/900-opacity-8"
+        },
+        "dark": {
+          "value": "#001E2B",
+          "alias": "neutral/transparent/900-opacity-8"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onFilled-danger-pressed",
+      "variableId": "VariableID:57358:268002",
+      "status": "draft",
+      "description": "Use as the pressed overlay for interactive components on filled danger backgrounds; do not use as a standalone background or decoration. Pressed overlays use a stronger opacity than hover overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#001E2B",
+          "alias": "neutral/transparent/900-opacity-12"
+        },
+        "dark": {
+          "value": "#001E2B",
+          "alias": "neutral/transparent/900-opacity-12"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onFilled-brand-hovered",
+      "variableId": "VariableID:57358:268003",
+      "status": "draft",
+      "description": "Use as the hovered overlay for interactive components on filled brand backgrounds; do not use as a standalone background or decoration. Hover overlays use a subtler opacity than pressed overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#001E2B",
+          "alias": "neutral/transparent/900-opacity-12"
+        },
+        "dark": {
+          "value": "#001E2B",
+          "alias": "neutral/transparent/900-opacity-12"
+        }
+      }
+    },
+    {
+      "path": "stateLayer/onFilled-brand-pressed",
+      "variableId": "VariableID:57358:268004",
+      "status": "draft",
+      "description": "Use as the pressed overlay for interactive components on filled brand backgrounds; do not use as a standalone background or decoration. Pressed overlays use a stronger opacity than hover overlays.",
+      "modeValues": {
+        "light": {
+          "value": "#001E2B",
+          "alias": "neutral/transparent/900-opacity-16"
+        },
+        "dark": {
+          "value": "#001E2B",
+          "alias": "neutral/transparent/900-opacity-16"
+        }
+      }
+    }
+  ]
+}
