@@ -17,7 +17,8 @@
     "dev": "tsc --watch",
     "generate": "python3 scripts/generate-advisor-data.py",
     "eval": "tsx scripts/run-eval.ts",
-    "eval:explain": "tsx scripts/run-explain-eval.ts"
+    "eval:explain": "tsx scripts/run-explain-eval.ts",
+    "demo": "cd web && npx serve dist"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.11.0"

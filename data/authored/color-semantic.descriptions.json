@@ -21,7 +21,7 @@
       "status": "existing",
       "description": "Use for the main app surface or page-level background; this should be the default surface for most UI.",
       "notFor": [
-        "Elevated surfaces like cards, popovers, dropdowns, or modals — use background/elevated.",
+        "Elevated surfaces like popovers, dropdowns, or modals — use background/elevated.",
         "Nested or secondary panels that need less visual weight than the main surface — use background/secondary."
       ],
       "modeValues": {
@@ -59,7 +59,7 @@
       "path": "background/elevated",
       "variableId": "VariableID:55281:29901",
       "status": "draft",
-      "description": "Use for elevated surfaces such as cards, popovers, menus, and overlays. Pair with matching text, icon, and border tokens when the state needs supporting content.",
+      "description": "Use for elevated surfaces such as popovers, menus, and overlays. Pair with matching text, icon, and border tokens when the state needs supporting content.",
       "modeValues": {
         "light": {
           "value": "#FFFFFF",
