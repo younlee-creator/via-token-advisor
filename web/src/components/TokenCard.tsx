@@ -220,6 +220,19 @@ function ColorTokenCard({
 
 /* ── Typography Token Card ─────────────────────────────────── */
 
+/**
+ * Maps Via's proprietary font names to the closest available web font for preview.
+ * "Euclid Circular A" → Inter (loaded via Google Fonts)
+ * "MongoDB Value Serif" → Georgia (system serif, closest structural match)
+ * "Source Code Pro" → monospace fallback chain
+ */
+function previewFontFamily(figmaFamily: string): string {
+  if (figmaFamily.startsWith("Euclid")) return "'Inter', system-ui, sans-serif";
+  if (figmaFamily.includes("Serif")) return "Georgia, 'Times New Roman', serif";
+  if (figmaFamily.includes("Source Code")) return "'Source Code Pro', 'Menlo', 'Consolas', monospace";
+  return figmaFamily;
+}
+
 function TypographyTokenCard({
   record,
   score,
@@ -245,7 +258,7 @@ function TypographyTokenCard({
 
   const sampleStyle = props
     ? {
-        fontFamily: props.fontFamily,
+        fontFamily: previewFontFamily(props.fontFamily),
         fontWeight: props.fontWeight,
         fontSize: props.fontSize,
         lineHeight: props.lineHeight,
@@ -284,6 +297,7 @@ function TypographyTokenCard({
 
       {props && (
         <div className="typography-props">
+          <PropPill label="Font" value={props.fontFamily} />
           <PropPill label="Size" value={props.fontSize} />
           <PropPill label="Weight" value={String(props.fontWeight)} />
           <PropPill label="Line" value={props.lineHeight} />
