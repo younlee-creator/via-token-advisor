@@ -19,7 +19,22 @@ Background, use cases, lessons learned, and further ideas.
 
 The MCP server lets you query tokens directly from your AI assistant using natural language.
 
-### Cursor
+> **Note:** This package is not yet published to npm. Use the [local setup](#local-setup-from-source) instructions below until an npm release is available.
+
+### Local setup (from source)
+
+Clone the repo and build:
+
+```bash
+git clone https://github.com/younlee-creator/via-token-advisor.git
+cd via-token-advisor
+npm install
+npm run build
+```
+
+Then use the absolute path to the built file in your config. Replace `/path/to/via-token-advisor` with the actual directory where you cloned the repo.
+
+#### Cursor
 
 Add to your `~/.cursor/mcp.json` (or open **Cursor Settings → MCP → Add Server**):
 
@@ -27,16 +42,55 @@ Add to your `~/.cursor/mcp.json` (or open **Cursor Settings → MCP → Add Serv
 {
   "mcpServers": {
     "via-token-advisor": {
-      "command": "npx",
-      "args": ["-y", "via-token-advisor"]
+      "command": "node",
+      "args": ["/path/to/via-token-advisor/dist/index.js"]
     }
   }
 }
 ```
 
-### Claude Desktop
+#### Claude Desktop
 
 Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "via-token-advisor": {
+      "command": "node",
+      "args": ["/path/to/via-token-advisor/dist/index.js"]
+    }
+  }
+}
+```
+
+#### VS Code (GitHub Copilot)
+
+Add to your `.vscode/mcp.json` in the workspace, or your user `settings.json`:
+
+```json
+{
+  "mcp": {
+    "servers": {
+      "via-token-advisor": {
+        "type": "stdio",
+        "command": "node",
+        "args": ["/path/to/via-token-advisor/dist/index.js"]
+      }
+    }
+  }
+}
+```
+
+After adding, restart your agent/IDE and confirm the server connects. No token or auth required.
+
+---
+
+### npm setup (once published)
+
+Once the package is published to npm, you can use the shorter `npx` form instead of the local path.
+
+#### Cursor
 
 ```json
 {
@@ -49,9 +103,20 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 }
 ```
 
-### VS Code (GitHub Copilot)
+#### Claude Desktop
 
-Add to your `.vscode/mcp.json` in the workspace, or your user `settings.json`:
+```json
+{
+  "mcpServers": {
+    "via-token-advisor": {
+      "command": "npx",
+      "args": ["-y", "via-token-advisor"]
+    }
+  }
+}
+```
+
+#### VS Code (GitHub Copilot)
 
 ```json
 {
@@ -66,8 +131,6 @@ Add to your `.vscode/mcp.json` in the workspace, or your user `settings.json`:
   }
 }
 ```
-
-After adding, restart your agent/IDE and confirm the server connects. No token or auth required.
 
 ---
 
